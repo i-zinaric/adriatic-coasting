@@ -1,0 +1,64 @@
+@media only screen and (max-width: 699px) {
+    
+    #closed-menu-mobile {
+        display: block;   // hide na klik
+
+        text-align: right;
+        height: 50px;
+        padding-top: 20px;
+        padding-right: 20px;
+        div {
+            display: inline;
+            font-family: $bungee;
+            font-size: 18px;
+            font-weight: 400;
+            color: $red;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        button {
+            cursor: pointer;
+            background: white;
+            border: none;
+        }
+    }
+    
+    header {
+        
+        display: none; //na otvaranju stranice, otvara se na klik na #closed-menu-mobile
+
+        height: 260px;
+        nav ul {
+            li {
+                padding: 6px 30px 6px 25%;
+                border-bottom: $bb solid $blue;
+                text-align: right;
+                
+                //button za zatvaranje menija
+                #close-menu-mobile {
+                    display: inline-block;
+
+                    border: none;
+                    background-color: white;
+                    cursor: pointer;
+                    &:active {
+                        background-color: $red;
+                        color: $red;
+                        border-radius: 6px;
+                    }
+                }
+            }
+        }
+        .logo {
+            img {
+            width: 60%; 
+            }
+        }
+    }
+    // header & navigation end
+
+    //main start
+    #intro {
+        padding-right: 10px;
+    }
+}

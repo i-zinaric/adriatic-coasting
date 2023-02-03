@@ -1,0 +1,81 @@
+//bgc
+.bg-gradient {
+    background-image: $bg-gradient;
+}
+
+//text-formating
+.main-title {
+    font-family: $bungee;
+    font-weight: 400;
+    font-size: 72px;
+    color: white;
+}
+.paragraf {
+    font-family: $bitter;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+}
+.strong-paragraf {
+    font-family: $bitter;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 34px;
+    color: white;
+}
+.pink-text {
+    color: $pink;
+}
+
+//left padding
+.pl-small {
+    padding-left: 100px;
+}
+.pl-title {
+    padding-left: 250px;
+}
+.pl-text {
+    padding-left: 430px;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+    .pl-small {
+        padding-left: 100px;
+    }
+    .pl-title {
+        padding-left: 100px;
+    }
+    .pl-text {
+        padding-left: 100px;
+    }
+}
+
+@media only screen and (max-width: 699px) {
+    .pl-small {
+        padding-left: 20px;
+    }
+    .pl-title {
+        padding-left: 20px;
+    }
+    .pl-text {
+        padding-left: 20px;
+    }
+}
+
+//bg-color
+.bg-blue {
+    background-color: $blue;
+}
+.bg-red {
+    background-color: $red;
+}
+.bg-pink {
+    background-color: $pink;
+}
+
+
+
+//artist red - button blue
+//artist blue - button pink
+//artist pink - button red
