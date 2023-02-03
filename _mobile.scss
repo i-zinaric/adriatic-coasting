@@ -1,7 +1,7 @@
-@media only screen and (max-width: 699px) {
+@media only screen and (max-width: 700px) {
     
     #closed-menu-mobile {
-        display: block;   // hide na klik
+        display: none;   // hide na klik
 
         text-align: right;
         height: 50px;
@@ -25,7 +25,7 @@
     
     header {
         
-        display: none; //na otvaranju stranice, otvara se na klik na #closed-menu-mobile
+        display: block; //na otvaranju stranice, otvara se na klik na #closed-menu-mobile
 
         height: 260px;
         nav ul {
@@ -47,11 +47,25 @@
                         border-radius: 6px;
                     }
                 }
+                a {
+                    font-family: $bungee;
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: $blue;
+                    text-decoration: none;
+                    &:hover {
+                        color: $red;
+                    }
+                    position: relative;
+                    z-index: 101;
+                }
             }
         }
         .logo {
             img {
-            width: 60%; 
+                width: 230px;
+                position: relative;
+                z-index: 100;
             }
         }
     }

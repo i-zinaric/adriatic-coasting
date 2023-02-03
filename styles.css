@@ -41,26 +41,26 @@
   padding-left: 430px;
 }
 
-@media only screen and (min-width: 700px) and (max-width: 1200px) {
+@media only screen and (max-width: 700px) {
   .pl-small {
-    padding-left: 100px;
+    padding-left: 20px;
   }
   .pl-title {
-    padding-left: 100px;
+    padding-left: 20px;
   }
   .pl-text {
-    padding-left: 100px;
+    padding-left: 20px;
   }
 }
-@media only screen and (max-width: 699px) {
+@media only screen and (min-width: 701px) and (max-width: 1024px) {
   .pl-small {
-    padding-left: 20px;
+    padding-left: 100px;
   }
   .pl-title {
-    padding-left: 20px;
+    padding-left: 100px;
   }
   .pl-text {
-    padding-left: 20px;
+    padding-left: 100px;
   }
 }
 .bg-blue {
@@ -215,7 +215,6 @@ main #sunce {
   position: relative;
   padding-top: 80px;
   padding-bottom: 120px;
-  padding-right: 20%;
   background: url("./images/valic-20x9.svg");
   background-position: bottom;
   background-size: 80px;
@@ -235,6 +234,7 @@ main #sunce {
           user-select: auto;
 }
 #intro p {
+  max-width: 80%;
   margin-bottom: 30px;
   -webkit-user-select: auto;
      -moz-user-select: auto;
@@ -461,19 +461,9 @@ footer .info a {
           user-select: auto;
 }
 
-@media only screen and (min-width: 1700px) {
-  #intro {
-    padding-right: 35%;
-  }
-}
-@media only screen and (min-width: 700px) and (max-width: 1200px) {
-  header nav ul li {
-    padding-left: 400px; /* udaljenost glavnog teksta od lijeve margine */
-  }
-}
-@media only screen and (max-width: 699px) {
+@media only screen and (max-width: 700px) {
   #closed-menu-mobile {
-    display: block;
+    display: none;
     text-align: right;
     height: 50px;
     padding-top: 20px;
@@ -494,7 +484,7 @@ footer .info a {
     border: none;
   }
   header {
-    display: none;
+    display: block;
     height: 260px;
   }
   header nav ul li {
@@ -513,10 +503,39 @@ footer .info a {
     color: #FF7058;
     border-radius: 6px;
   }
+  header nav ul li a {
+    font-family: "Bungee Inline", cursive;
+    font-size: 15px;
+    font-weight: 400;
+    color: #62CDF9;
+    text-decoration: none;
+    position: relative;
+    z-index: 101;
+  }
+  header nav ul li a:hover {
+    color: #FF7058;
+  }
   header .logo img {
-    width: 60%;
+    width: 230px;
+    position: relative;
+    z-index: 100;
   }
   #intro {
     padding-right: 10px;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 1024px) {
+  header nav ul li {
+    padding-left: 400px; /* udaljenost teksta od lijeve margine */
+  }
+}
+@media only screen and (min-width: 1601px) {
+  #intro p {
+    max-width: 70%;
+  }
+}
+@media only screen and (min-width: 2501px) {
+  #intro p {
+    max-width: 60%;
   }
 }/*# sourceMappingURL=styles.css.map */

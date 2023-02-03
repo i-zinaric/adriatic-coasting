@@ -39,27 +39,27 @@
     padding-left: 430px;
 }
 
-@media only screen and (min-width: 700px) and (max-width: 1200px) {
+@media only screen and (max-width: 700px) { ////MOBILE
     .pl-small {
-        padding-left: 100px;
+        padding-left: 20px;
     }
     .pl-title {
-        padding-left: 100px;
+        padding-left: 20px;
     }
     .pl-text {
-        padding-left: 100px;
+        padding-left: 20px;
     }
 }
 
-@media only screen and (max-width: 699px) {
+@media only screen and (min-width: 701px) and (max-width: 1024px) { ///SMALL
     .pl-small {
-        padding-left: 20px;
+        padding-left: 100px;
     }
     .pl-title {
-        padding-left: 20px;
+        padding-left: 100px;
     }
     .pl-text {
-        padding-left: 20px;
+        padding-left: 100px;
     }
 }
 
@@ -79,3 +79,8 @@
 //artist red - button blue
 //artist blue - button pink
 //artist pink - button red
+
+// <700 - mobile
+// 701 - 1024 - small
+// 1025 - 1600 ? - medium
+// >1601 - large
