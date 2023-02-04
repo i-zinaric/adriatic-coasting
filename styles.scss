@@ -71,6 +71,7 @@ main {
 }
 #intro {
     position: relative;
+    
     padding-top: 80px;
     padding-bottom: 120px;
 
@@ -94,18 +95,8 @@ main {
 //main end
 
 //events start
-#events {
-    .events-button {
-        margin-left: 25px;
-        button {
-            position: absolute;
-            top: 90px;
-        }
-    }
-}
 //events box
 .events-container {
-    display: flex;
     padding-bottom: 50px;
     &:first-of-type {
         padding-top: 100px;
@@ -114,10 +105,7 @@ main {
         padding-bottom: 100px;
     }
 }
-//left side
-.events-info {
-    width: 65%;
-}
+//date and place
 .events-date {
     font-family: $bitter;
     font-size: 32px;
@@ -138,7 +126,13 @@ main {
     margin-bottom: 8px;
     text-decoration: none;
 }
+//name and button
+.events-info {
+    display: flex;
+}
+//left side
 .events-name {
+    width: 65%; //širina flex itema
     font-family: $bungee;
     font-weight: 400;
     font-size: 60px;
@@ -147,8 +141,13 @@ main {
 }
 //right side
 .events-button {
-    width: 35%;
+    width: 35%; //širina flex itema
     position: relative;
+    button {
+        margin-left: 30px;
+        position: absolute;
+        top: 10px;
+    }
     a {
         padding-top: 16px;
         padding-bottom: 16px;
