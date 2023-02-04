@@ -118,11 +118,13 @@
     }
     //left side
     .events-name {
-        width: 100%; // jer inače preuzima širinu flex itema
+        width: 100%; // jer inače preuzima širinu flex itema na većim zaslonima
+        max-width: 100%; 
         font-family: $bungee;
         font-weight: 400;
         font-size: 48px;
-        line-height: 70px;
+        line-height: 58px;
+        word-wrap: break-word;
         color: #FFF;
     }
     //right side

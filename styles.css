@@ -690,10 +690,12 @@ footer .info a {
   }
   .events-name {
     width: 100%;
+    max-width: 100%;
     font-family: "Bungee Inline", cursive;
     font-weight: 400;
     font-size: 48px;
-    line-height: 70px;
+    line-height: 58px;
+    word-wrap: break-word;
     color: #FFF;
   }
   .events-button {
