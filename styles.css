@@ -84,7 +84,7 @@
 }
 @media only screen and (min-width: 701px) and (max-width: 1024px) {
   .pl-small {
-    padding-left: 20px;
+    padding-left: 30px;
   }
   .pl-title {
     padding-left: 100px;
@@ -188,7 +188,7 @@
 }
 
 #dj-oz {
-  background-image: url("./images/artists/DJ-OZ-b.jpg");
+  background-image: url("./images/artists/dj-oz-b-2.jpg");
 }
 
 #elephant-hump {
@@ -651,6 +651,7 @@ footer .info a {
   }
   #intro {
     padding-right: 10px;
+    background-size: 60px;
   }
   #intro p {
     max-width: 100%;
@@ -700,6 +701,7 @@ footer .info a {
     position: relative;
   }
   .events-button button {
+    margin-top: 10px;
     margin-left: 0px;
     position: static;
   }
@@ -714,6 +716,38 @@ footer .info a {
     letter-spacing: 5%;
     color: #62CDF9;
   }
+  .artist-name {
+    font-size: 22px;
+  }
+  .artist-info {
+    height: 1000px;
+  }
+  .artist-info .bg-img-container {
+    margin-left: 0;
+    height: 500px;
+    background-size: auto 100%;
+    width: 100%;
+    padding-bottom: 0px;
+  }
+  .artist-info .bg-img-container p {
+    margin: 0;
+    padding: 510px 30px 0 30px;
+    max-height: 910px;
+    font-size: 18px;
+  }
+  .artist-info .bg-img-container button {
+    display: block;
+    margin: 15px 0 0 30px;
+  }
+  .artist-info .bg-img-container div {
+    width: 100%;
+    margin: 0;
+    bottom: 30px;
+  }
+  footer .info {
+    max-width: 100%;
+    font-size: 18px;
+  }
 }
 @media only screen and (min-width: 701px) and (max-width: 1024px) {
   header nav ul li {
@@ -723,65 +757,52 @@ footer .info a {
     padding-right: 30px;
   }
   .events-container {
-    padding-bottom: 50px;
-  }
-  .events-container:first-of-type {
-    padding-top: 100px;
-  }
-  .events-container:last-of-type {
-    padding-bottom: 100px;
+    margin-bottom: 30px;
   }
   .events-date {
-    font-family: "Bitter", serif;
     font-size: 28px;
-    font-weight: 500;
-    color: #FFF;
-    letter-spacing: 3%;
-    line-height: 39px;
-    text-transform: uppercase;
     margin-bottom: 8px;
   }
   .events-place, .events-place a {
-    font-family: "Bitter", serif;
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 18px;
-    letter-spacing: 3%;
-    color: #FFF;
+    font-size: 16px;
     margin-bottom: 8px;
-    text-decoration: none;
   }
   .events-info {
     display: flex;
   }
   .events-name {
-    width: 65%;
-    font-family: "Bungee Inline", cursive;
-    font-weight: 400;
     font-size: 52px;
-    line-height: 70px;
-    color: #FFF;
-  }
-  .events-button {
-    width: 35%;
-    position: relative;
   }
   .events-button button {
-    margin-left: 30px;
-    position: absolute;
-    top: 10px;
-    right: 20px;
+    right: 30px;
   }
-  .events-button a {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    text-align: center;
-    text-decoration: none;
-    font-family: "Bitter", serif;
-    font-weight: 900;
+  .artist-name {
+    font-size: 22px;
+  }
+  .artist-info {
+    height: 1000px;
+  }
+  .artist-info .bg-img-container {
+    margin-left: 0;
+    height: 500px;
+    background-size: auto 100%;
+    width: 100%;
+    padding-bottom: 0px;
+  }
+  .artist-info .bg-img-container p {
+    margin: 0;
+    padding: 510px 30px 0 30px;
+    max-height: 910px;
     font-size: 18px;
-    letter-spacing: 5%;
-    color: #62CDF9;
+  }
+  .artist-info .bg-img-container button {
+    display: block;
+    margin: 15px 0 0 30px;
+  }
+  .artist-info .bg-img-container div {
+    width: 100%;
+    margin: 0;
+    bottom: 30px;
   }
 }
 @media only screen and (min-width: 1601px) {
