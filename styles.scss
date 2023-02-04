@@ -32,9 +32,6 @@ header {
             &:first-of-type {
                 padding-top: 30px;
             }
-            &:last-of-type {
-                border: none;
-            }
             a {
                 font-family: $bungee;
                 font-size: 18px;
@@ -49,9 +46,9 @@ header {
     }
     .logo {
         position: absolute;
-        z-index: 100;
         top: 0px;
         left: 0px;
+        z-index: 100;
         img {
         width: 80%; 
         }
@@ -59,8 +56,8 @@ header {
 }
 // header & navigation end
 
-//main start
-main {
+//intro start
+.bg-gradient {
     position: relative;
     #sunce {
         position: absolute;
@@ -71,7 +68,7 @@ main {
 }
 #intro {
     position: relative;
-    
+
     padding-top: 80px;
     padding-bottom: 120px;
 
@@ -97,12 +94,13 @@ main {
 //events start
 //events box
 .events-container {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     &:first-of-type {
         padding-top: 100px;
     }
     &:last-of-type {
         padding-bottom: 100px;
+        margin-bottom: 0;
     }
 }
 //date and place
@@ -277,8 +275,8 @@ main {
 
 //banner start
 .banner {
-    height: 630px;
-    padding-top: 270px;
+    height: 430px;
+    padding-top: 181px;
     background-image: url(./images/banner.svg);
     background-position: bottom;
     background-size: cover;
@@ -287,7 +285,7 @@ main {
     a {
     display: block;
     font-family: $bungee;
-    font-size: 90px;
+    font-size: 68px;
     font-weight: 400;
     color: white;
     text-align: center;

@@ -175,6 +175,110 @@
   background-image: url("./images/artists/antonio-zuza-r.jpg");
 }
 
+#big-danny-cane {
+  background-image: url("./images/artists/big-danny-kane-b.jpg");
+}
+
+#carlito {
+  background-image: url("./images/artists/carlito-r.jpg");
+}
+
+#dean-sunshine {
+  background-image: url("./images/artists/dean-sunshine-p.jpg");
+}
+
+#dj-oz {
+  background-image: url("./images/artists/DJ-OZ-b.jpg");
+}
+
+#elephant-hump {
+  background-image: url("./images/artists/Elephant-Hump-b.jpg");
+}
+
+#felver {
+  background-image: url("./images/artists/felver-r.jpg");
+}
+
+#hrwoe {
+  background-image: url("./images/artists/hrwoE-p.jpg");
+}
+
+#ilija-rudman {
+  background-image: url("./images/artists/ilija-rudman-r.jpg");
+}
+
+#ilko-cuic {
+  background-image: url("./images/artists/ilko-culic-r.jpg");
+}
+
+#iva {
+  background-image: url("./images/artists/IVA-r.jpg");
+}
+
+#jack-tyson-charles {
+  background-image: url("./images/artists/jack-tyson-charles-r.jpg");
+}
+
+#kozmonaut {
+  background-image: url("./images/artists/kozmonaut-b.jpg");
+}
+
+#lukadelux {
+  background-image: url("./images/artists/lukadelux-b.jpg");
+}
+
+#mate-kokic {
+  background-image: url("./images/artists/mate-kokic-b.jpg");
+}
+
+#matija-duic {
+  background-image: url("./images/artists/matija-duic-p.jpg");
+}
+
+#mile {
+  background-image: url("./images/artists/mile-b.jpg");
+}
+
+#nick-colgan {
+  background-image: url("./images/artists/nick-p.jpg");
+}
+
+#pepi-jogarde {
+  background-image: url("./images/artists/pepi-r.jpg");
+}
+
+#phil-mison {
+  background-image: url("./images/artists/phil-mison-b.jpg");
+}
+
+#pips {
+  background-image: url("./images/artists/pips-r.jpg");
+}
+
+#sergio {
+  background-image: url("./images/artists/sergio-b.jpg");
+}
+
+#tipura {
+  background-image: url("./images/artists/tipura-b.jpg");
+}
+
+#william-collins {
+  background-image: url("./images/artists/william-collins-b.jpg");
+}
+
+#your-name {
+  background-image: url("./images/artists/your-name-r.jpg");
+}
+
+#zak {
+  background-image: url("./images/artists/ZAK-p.jpg");
+}
+
+#zozo {
+  background-image: url("./images/artists/zozo-b.jpg");
+}
+
 #close-menu-mobile {
   display: none;
 }
@@ -208,9 +312,6 @@ header nav ul li {
 header nav ul li:first-of-type {
   padding-top: 30px;
 }
-header nav ul li:last-of-type {
-  border: none;
-}
 header nav ul li a {
   font-family: "Bungee Inline", cursive;
   font-size: 18px;
@@ -223,18 +324,18 @@ header nav ul li a:hover {
 }
 header .logo {
   position: absolute;
-  z-index: 100;
   top: 0px;
   left: 0px;
+  z-index: 100;
 }
 header .logo img {
   width: 80%;
 }
 
-main {
+.bg-gradient {
   position: relative;
 }
-main #sunce {
+.bg-gradient #sunce {
   position: absolute;
   left: 260px;
   top: 250px;
@@ -273,13 +374,14 @@ main #sunce {
 }
 
 .events-container {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .events-container:first-of-type {
   padding-top: 100px;
 }
 .events-container:last-of-type {
   padding-bottom: 100px;
+  margin-bottom: 0;
 }
 
 .events-date {
@@ -443,8 +545,8 @@ main #sunce {
 }
 
 .banner {
-  height: 630px;
-  padding-top: 270px;
+  height: 430px;
+  padding-top: 181px;
   background-image: url(./images/banner.svg);
   background-position: bottom;
   background-size: cover;
@@ -454,7 +556,7 @@ main #sunce {
 .banner a {
   display: block;
   font-family: "Bungee Inline", cursive;
-  font-size: 90px;
+  font-size: 68px;
   font-weight: 400;
   color: white;
   text-align: center;
@@ -616,6 +718,9 @@ footer .info a {
 @media only screen and (min-width: 701px) and (max-width: 1024px) {
   header nav ul li {
     padding-left: 400px; /* udaljenost teksta od lijeve margine */
+  }
+  #intro h2 {
+    padding-right: 30px;
   }
   .events-container {
     padding-bottom: 50px;
