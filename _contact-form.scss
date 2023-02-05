@@ -1,0 +1,139 @@
+#contract-form-container {
+    display: none;
+
+    border: 1px solid $blue;
+
+    padding: 150px 200px 100px 230px;
+    position: fixed;
+    top: 20px;
+    width: 90vw;
+    overflow-y: scroll;
+    height: 3000px;
+    margin: 0 auto;
+    background-color: white;
+    z-index: 10000;
+    h4 {
+        font-family: $bungee;
+        font-weight: 400;
+        font-size: 70px;
+        color: $pink;
+
+        margin-bottom: 70px;
+    }
+    #reset-contract-form {
+        display: inline-block;
+        position: absolute;
+        top: 150px;
+        right: 150px;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border: none;
+        box-shadow: none;
+        &:hover {
+            cursor: pointer;
+        }
+        &:active {
+            background-color: $pink;
+        }
+    }
+    .input-item {
+        height: 30px;
+        display: flex;
+        justify-content: start;
+
+        margin-bottom: 40px;
+        
+    }
+    label {
+        flex-shrink: 0;
+        padding-right: 10px;
+
+        font-family: $bitter;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        color: $blue;
+    }
+    input {
+        padding-top: 1px;
+        padding-bottom: 1px;
+        width: 100%;
+        display: block;
+        box-shadow: none;
+        border: none;
+        border-bottom: $bb solid $blue;
+
+        color: $blue;
+        font-size: 24px;
+        font-weight: 500;
+        font-family: $bitter;
+        padding-left: 20px;
+        &:focus {
+            outline: none;
+            color: white;
+            font-size: 24px;
+            font-weight: 500;
+            font-family: $bitter;
+            padding-left: 20px;
+            background-color: $blue;
+            border-top: $bb solid $blue;
+        }
+        &[type=number]::-webkit-inner-spin-button, 
+        &[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+        }
+    }
+    h6 {
+        margin-top: 100px;
+        margin-bottom: 60px;
+        font-family: $bitter;
+        font-size: 24px;
+        font-weight: 900;
+        letter-spacing: 5%;
+        text-transform: uppercase;
+        color: $pink;
+    }
+    p {
+        margin-top: 110px;
+
+        font-family: $bitter;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 30px;
+        color: $blue;
+
+        user-select: auto;
+    }
+    #submit-contract-form {
+        display: block;
+        margin-top: 80px;
+        height: 100px;
+        width: 100%;
+        background-color: $blue;
+        
+        color: white;
+        font-family: $bungee;
+        font-weight: 400;
+        font-size: 68px;
+
+        border: none;
+        box-shadow: none;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            cursor: pointer;
+            background: $pink;
+            color: white;
+        }
+        &:active {
+            cursor: pointer;
+            background: $pink;
+            color: white;
+        }
+    }
+
+}

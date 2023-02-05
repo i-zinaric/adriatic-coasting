@@ -2,6 +2,7 @@
 @import "mixins";
 @import "buttons";
 @import "bg-images";
+@import "contact-form";
 
 #close-menu-mobile {
     display: none;
@@ -57,6 +58,9 @@ header {
 // header & navigation end
 
 //intro start
+main {
+    position: relative;
+}
 .bg-gradient {
     position: relative;
     #sunce {
@@ -275,11 +279,12 @@ header {
 
 //banner start
 .banner {
-    height: 430px;
+    height: 420px;
     padding-top: 181px;
+    background-color: #FFCE85; //#FFCE85
     background-image: url(./images/banner.svg);
-    background-position: bottom;
-    background-size: cover;
+    background-position: center;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     a {
@@ -305,7 +310,7 @@ footer {
         font-weight: 400;
         font-size: 24px;
         text-align: center;
-        line-height: 40px;
+        line-height: 34px;
         color: $red;
         user-select: auto;
         a {

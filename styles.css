@@ -279,6 +279,135 @@
   background-image: url("./images/artists/zozo-b.jpg");
 }
 
+#contract-form-container {
+  display: none;
+  border: 1px solid #62CDF9;
+  padding: 150px 200px 100px 230px;
+  position: fixed;
+  top: 20px;
+  width: 90vw;
+  overflow-y: scroll;
+  height: 3000px;
+  margin: 0 auto;
+  background-color: white;
+  z-index: 10000;
+}
+#contract-form-container h4 {
+  font-family: "Bungee Inline", cursive;
+  font-weight: 400;
+  font-size: 70px;
+  color: #FFC8FF;
+  margin-bottom: 70px;
+}
+#contract-form-container #reset-contract-form {
+  display: inline-block;
+  position: absolute;
+  top: 150px;
+  right: 150px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: none;
+  box-shadow: none;
+}
+#contract-form-container #reset-contract-form:hover {
+  cursor: pointer;
+}
+#contract-form-container #reset-contract-form:active {
+  background-color: #FFC8FF;
+}
+#contract-form-container .input-item {
+  height: 30px;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 40px;
+}
+#contract-form-container label {
+  flex-shrink: 0;
+  padding-right: 10px;
+  font-family: "Bitter", serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #62CDF9;
+}
+#contract-form-container input {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 100%;
+  display: block;
+  box-shadow: none;
+  border: none;
+  border-bottom: 6px solid #62CDF9;
+  color: #62CDF9;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Bitter", serif;
+  padding-left: 20px;
+}
+#contract-form-container input:focus {
+  outline: none;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Bitter", serif;
+  padding-left: 20px;
+  background-color: #62CDF9;
+  border-top: 6px solid #62CDF9;
+}
+#contract-form-container input[type=number]::-webkit-inner-spin-button, #contract-form-container input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#contract-form-container h6 {
+  margin-top: 100px;
+  margin-bottom: 60px;
+  font-family: "Bitter", serif;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 5%;
+  text-transform: uppercase;
+  color: #FFC8FF;
+}
+#contract-form-container p {
+  margin-top: 110px;
+  font-family: "Bitter", serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #62CDF9;
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+      -ms-user-select: auto;
+          user-select: auto;
+}
+#contract-form-container #submit-contract-form {
+  display: block;
+  margin-top: 80px;
+  height: 100px;
+  width: 100%;
+  background-color: #62CDF9;
+  color: white;
+  font-family: "Bungee Inline", cursive;
+  font-weight: 400;
+  font-size: 68px;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contract-form-container #submit-contract-form:hover {
+  cursor: pointer;
+  background: #FFC8FF;
+  color: white;
+}
+#contract-form-container #submit-contract-form:active {
+  cursor: pointer;
+  background: #FFC8FF;
+  color: white;
+}
+
 #close-menu-mobile {
   display: none;
 }
@@ -330,6 +459,10 @@ header .logo {
 }
 header .logo img {
   width: 80%;
+}
+
+main {
+  position: relative;
 }
 
 .bg-gradient {
@@ -545,11 +678,12 @@ header .logo img {
 }
 
 .banner {
-  height: 430px;
+  height: 420px;
   padding-top: 181px;
+  background-color: #FFCE85;
   background-image: url(./images/banner.svg);
-  background-position: bottom;
-  background-size: cover;
+  background-position: center;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -574,7 +708,7 @@ footer .info {
   font-weight: 400;
   font-size: 24px;
   text-align: center;
-  line-height: 40px;
+  line-height: 34px;
   color: #FF7058;
   -webkit-user-select: auto;
      -moz-user-select: auto;
@@ -811,9 +945,15 @@ footer .info a {
   #intro p {
     max-width: 70%;
   }
+  .bg-img-container {
+    height: 900px;
+  }
 }
 @media only screen and (min-width: 2501px) {
   #intro p {
     max-width: 60%;
+  }
+  .bg-img-container {
+    height: 900px;
   }
 }/*# sourceMappingURL=styles.css.map */
