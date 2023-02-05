@@ -420,10 +420,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 header {
@@ -679,7 +675,7 @@ main {
 
 .banner {
   height: 500px;
-  padding-top: 181px;
+  padding-top: 190px;
   background-color: #FFCE85;
   background-image: url(./images/banner.svg);
   background-position: center;
@@ -908,6 +904,7 @@ footer .info a {
   }
   .events-name {
     font-size: 52px;
+    line-height: normal;
   }
   .events-button button {
     right: 30px;
@@ -927,9 +924,12 @@ footer .info a {
   }
   .artist-info .bg-img-container p {
     margin: 0;
-    padding: 510px 30px 0 30px;
+    padding: 520px 20% 0 30px;
     max-height: 910px;
-    font-size: 18px;
+    font-size: 20px;
+  }
+  .artist-info .bg-img-container p span {
+    line-height: 28px;
   }
   .artist-info .bg-img-container button {
     display: block;
@@ -939,6 +939,22 @@ footer .info a {
     width: 100%;
     margin: 0;
     bottom: 30px;
+  }
+  .banner {
+    height: 350px;
+    padding-top: 150px;
+    background-position: bottom;
+    background-size: auto 80%;
+  }
+  .banner a {
+    font-size: 72px;
+  }
+  footer {
+    height: 240px;
+  }
+  footer .info {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 @media only screen and (min-width: 1601px) {
