@@ -678,19 +678,19 @@ main {
 }
 
 .banner {
-  height: 420px;
+  height: 500px;
   padding-top: 181px;
   background-color: #FFCE85;
   background-image: url(./images/banner.svg);
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 .banner a {
   display: block;
   font-family: "Bungee Inline", cursive;
-  font-size: 68px;
+  font-size: 90px;
   font-weight: 400;
   color: white;
   text-align: center;
@@ -945,7 +945,7 @@ footer .info a {
   #intro p {
     max-width: 70%;
   }
-  .bg-img-container {
+  .artist-info .bg-img-container {
     height: 900px;
   }
 }
@@ -953,7 +953,7 @@ footer .info a {
   #intro p {
     max-width: 60%;
   }
-  .bg-img-container {
+  .artist-info .bg-img-container {
     height: 900px;
   }
 }/*# sourceMappingURL=styles.css.map */

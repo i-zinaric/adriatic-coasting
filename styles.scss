@@ -279,18 +279,18 @@ main {
 
 //banner start
 .banner {
-    height: 420px;
+    height: 500px;
     padding-top: 181px;
     background-color: #FFCE85; //#FFCE85
     background-image: url(./images/banner.svg);
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     a {
     display: block;
     font-family: $bungee;
-    font-size: 68px;
+    font-size: 90px;
     font-weight: 400;
     color: white;
     text-align: center;
