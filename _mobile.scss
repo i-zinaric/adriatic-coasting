@@ -1,4 +1,4 @@
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
     
     #closed-menu-mobile {
         display: block;   // hide na klik
@@ -73,7 +73,7 @@
 
     //main start
     #intro {
-        padding-right: 10px;
+        padding-right: 5%;
         background-size: 40px; //valić
         padding-top: 30px;
         padding-bottom: 40px;
@@ -88,6 +88,7 @@
     //events start
     //events box
     .events-container {
+        padding-right: 10px;
         padding-bottom: 0px;
         &:first-of-type {
             padding-top: 50px;
@@ -171,7 +172,7 @@
             padding-bottom: 0px;
             p {
                 margin: 0;
-                padding: 320px 30px 0 30px;
+                padding: 320px 10px 0 10px;
                 max-height: 1020px;
                 font-size: 18px;
                 span {
@@ -181,12 +182,13 @@
             }
             button {
                 display: block;
-                margin: 15px 0 0 30px;
+                margin: 15px 0 0 10px;
             }
             div {
                 width: 100%;
                 margin: 0;
-                bottom: 30px
+                bottom: 30px;
+                font-size: 42px;
             }
         }
     }
@@ -198,13 +200,13 @@
         padding-right: 30px;
 
         height: 200px;
-        padding-top: 60px;
+        padding-top: 65px;
         background-color: #FFCE85; //#FFCE85
         background-image: url(./images/banner.svg);
         background-position: bottom;
-        background-size: auto 60%;
+        background-size: auto 100%;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-attachment:local;
         a {
         font-size: 38px;
         line-height: 38px;
@@ -217,7 +219,7 @@
     footer {
         height: 200px;
         .info {
-            font-size: 16px;
+            font-size: 15px;
             line-height: 24px;
         }
     }

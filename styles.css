@@ -8,12 +8,12 @@
   font-size: 72px;
   color: white;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .main-title {
     font-size: 58px;
   }
 }
-@media only screen and (min-width: 701px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   .main-title {
     font-size: 64px;
   }
@@ -25,12 +25,12 @@
   line-height: 24px;
   color: white;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .paragraf {
     font-size: 14px;
   }
 }
-@media only screen and (min-width: 701px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   .paragraf {
     font-size: 16px;
   }
@@ -44,17 +44,17 @@
   line-height: 34px;
   color: white;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .strong-paragraf {
     line-height: 28px;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .strong-paragraf {
     font-size: 18px;
   }
 }
-@media only screen and (min-width: 701px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   .strong-paragraf {
     font-size: 20px;
   }
@@ -76,18 +76,18 @@
   padding-left: 430px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .pl-small {
-    padding-left: 20px;
+    padding-left: 10px;
   }
   .pl-title {
-    padding-left: 20px;
+    padding-left: 10px;
   }
   .pl-text {
-    padding-left: 20px;
+    padding-left: 10px;
   }
 }
-@media only screen and (min-width: 701px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   .pl-small {
     padding-left: 30px;
   }
@@ -725,7 +725,7 @@ footer .info a {
           user-select: auto;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   #closed-menu-mobile {
     display: block;
     text-align: right;
@@ -785,7 +785,7 @@ footer .info a {
     z-index: 100;
   }
   #intro {
-    padding-right: 10px;
+    padding-right: 5%;
     background-size: 40px;
     padding-top: 30px;
     padding-bottom: 40px;
@@ -797,6 +797,7 @@ footer .info a {
     max-width: 100%;
   }
   .events-container {
+    padding-right: 10px;
     padding-bottom: 0px;
   }
   .events-container:first-of-type {
@@ -873,7 +874,7 @@ footer .info a {
   }
   .artist-info .bg-img-container p {
     margin: 0;
-    padding: 320px 30px 0 30px;
+    padding: 320px 10px 0 10px;
     max-height: 1020px;
     font-size: 18px;
     overflow: hidden;
@@ -883,24 +884,25 @@ footer .info a {
   }
   .artist-info .bg-img-container button {
     display: block;
-    margin: 15px 0 0 30px;
+    margin: 15px 0 0 10px;
   }
   .artist-info .bg-img-container div {
     width: 100%;
     margin: 0;
     bottom: 30px;
+    font-size: 42px;
   }
   .banner {
     padding-left: 30px;
     padding-right: 30px;
     height: 200px;
-    padding-top: 60px;
+    padding-top: 65px;
     background-color: #FFCE85;
     background-image: url(./images/banner.svg);
     background-position: bottom;
-    background-size: auto 60%;
+    background-size: auto 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: local;
   }
   .banner a {
     font-size: 38px;
@@ -911,11 +913,11 @@ footer .info a {
     height: 200px;
   }
   footer .info {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
   }
 }
-@media only screen and (min-width: 701px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   header nav ul li {
     padding-left: 400px; /* udaljenost teksta od lijeve margine */
   }
