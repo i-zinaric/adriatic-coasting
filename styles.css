@@ -793,6 +793,13 @@ footer .info a {
     top: -40px;
     z-index: 100;
   }
+}
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  header .logo img {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 768px) {
   #intro {
     padding-right: 5%;
     background-size: 40px;
@@ -806,6 +813,8 @@ footer .info a {
   #intro p {
     max-width: 100%;
   }
+}
+@media only screen and (max-width: 768px) {
   .events-container {
     padding-right: 10px;
     padding-bottom: 0px;
@@ -816,6 +825,8 @@ footer .info a {
   .events-container:last-of-type {
     padding-bottom: 60px;
   }
+}
+@media only screen and (max-width: 768px) {
   .events-date {
     font-family: "Bitter", serif;
     font-size: 20px;
@@ -826,6 +837,8 @@ footer .info a {
     text-transform: uppercase;
     margin-bottom: 0;
   }
+}
+@media only screen and (max-width: 768px) {
   .events-place, .events-place a {
     font-family: "Bitter", serif;
     font-size: 14px;
@@ -836,9 +849,13 @@ footer .info a {
     margin-bottom: 8px;
     text-decoration: none;
   }
+}
+@media only screen and (max-width: 768px) {
   .events-info {
     display: block;
   }
+}
+@media only screen and (max-width: 768px) {
   .events-name {
     width: 100%;
     max-width: 100%;
@@ -849,6 +866,8 @@ footer .info a {
     word-wrap: break-word;
     color: #FFF;
   }
+}
+@media only screen and (max-width: 768px) {
   .events-button {
     width: 100%;
     position: relative;
@@ -869,9 +888,13 @@ footer .info a {
     letter-spacing: 5%;
     color: #62CDF9;
   }
+}
+@media only screen and (max-width: 768px) {
   .artist-name {
     font-size: 22px;
   }
+}
+@media only screen and (max-width: 768px) {
   .artist-info {
     height: 1130px;
   }
@@ -902,6 +925,8 @@ footer .info a {
     bottom: 30px;
     font-size: 42px;
   }
+}
+@media only screen and (max-width: 768px) {
   .banner {
     padding-left: 30px;
     padding-right: 30px;
@@ -919,6 +944,8 @@ footer .info a {
     line-height: 38px;
     font-weight: 400;
   }
+}
+@media only screen and (max-width: 768px) {
   footer {
     height: 200px;
   }

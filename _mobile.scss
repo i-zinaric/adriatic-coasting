@@ -80,6 +80,9 @@
                 position: absolute;
                 top: -40px;
                 z-index: 100;
+                @media (orientation: landscape) {
+                    width: 300px;
+                }
             }
         }
     }
