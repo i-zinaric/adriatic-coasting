@@ -1,70 +1,84 @@
 @media only screen and (max-width: 768px) {
     
     #closed-menu-mobile {
-        display: block;   // hide na klik
-
+        display: block;  // UVIJEK SE PRIKAZUJE
+        height: 40px;
         text-align: right;
-        height: 50px;
-        padding-top: 20px;
+        padding-top: 10px;
         padding-right: 20px;
-        div {
-            display: inline;
+
+        position: relative;
+        
+        h6 {
+            display: block;   //HIDE KAD JE MENI OTVOREN (DISPLAY NONE)
             font-family: $bungee;
             font-size: 18px;
             font-weight: 400;
             color: $red;
-            text-decoration: none;
-            margin-right: 15px;
+            margin-right: 50px;
         }
         button {
             cursor: pointer;
             background: white;
             border: none;
+            width: 30px;
+            height: 30px;
+
+            position: absolute;
+            right: 20px;
+            top: 4px;
+            img {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+            }
         }
     }
+
+    #open-menu-button {
+        display: inline-block; //HIDE KAD JE MENI OTVOREN
+    }
+    #close-menu-button {
+        display: none;  //HIDE KAD JE MENI ZATVOREN
+    }
     
-    header {
-        
-        display: none; //na otvaranju stranice, otvara se na klik na #closed-menu-mobile
-
-        height: 260px;
-        nav ul {
-            li {
-                padding: 6px 30px 6px 25%;
-                border-bottom: $bb solid $blue;
-                text-align: right;
-                
-                //button za zatvaranje menija
-                #close-menu-mobile {
-                    display: inline-block;
-
-                    border: none;
-                    background-color: white;
-                    cursor: pointer;
-                    &:active {
-                        background-color: $red;
-                        color: $red;
-                        border-radius: 6px;
+    header {       
+        display: none; //HIDE KAD JE MENI ZATVOREN
+        height: 200px;
+        position: relative;
+        nav {
+            ul {
+                background-color: white;
+                width: 100%;
+                position: absolute;
+                right: 0;
+                li {
+                    padding: 6px 20px 6px 0;
+                    border-bottom: 4px solid $blue;
+                    text-align: right;   
+                    &:first-of-type {
+                        padding-top: 0px;
+                    }           
+                    a {
+                        font-family: $bungee;
+                        font-size: 15px;
+                        font-weight: 400;
+                        color: $blue;
+                        text-decoration: none;
+                        &:hover {
+                            color: $red;
+                        }
+                        position: relative;
+                        z-index: 101;
                     }
-                }
-                a {
-                    font-family: $bungee;
-                    font-size: 15px;
-                    font-weight: 400;
-                    color: $blue;
-                    text-decoration: none;
-                    &:hover {
-                        color: $red;
-                    }
-                    position: relative;
-                    z-index: 101;
                 }
             }
         }
         .logo {
             img {
-                width: 230px;
-                position: relative;
+                width: 150px;
+                position: absolute;
+                top: -40px;
                 z-index: 100;
             }
         }
@@ -175,7 +189,7 @@
                 margin: 0;
                 padding: 320px 10px 0 10px;
                 max-height: 1020px;
-                font-size: 18px;
+                font-size: 16px;
                 span {
                     line-height: 28px;
                 }
