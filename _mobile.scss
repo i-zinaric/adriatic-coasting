@@ -80,8 +80,8 @@
                 position: absolute;
                 top: -40px;
                 z-index: 100;
-                @media only screen and (max-width: 1024px) and (orientation: landscape) {
-                    width: 300px;
+                @media only screen and (min-width: 400px) and (max-width: 1024px) {
+                    width: 280px;
                 }
             }
         }
@@ -181,33 +181,47 @@
         font-size: 22px;
     }
     .artist-info {
-        height: 1130px;
-        .bg-img-container {
-            margin-left: 0;
-            height: 300px;
-            background-size: auto 100%;
-            width: 100%;
-            padding-bottom: 0px;
+        height: fit-content;
+        position: relative;
+        .info-zip-container {
+            position: static;
+            margin-top: 10px;
             p {
-                margin: 0;
-                padding: 320px 10px 0 10px;
-                max-height: 1020px;
-                font-size: 16px;
-                span {
-                    line-height: 28px;
+                margin-bottom: 10px;
+                font-size: 18px;
+                max-height: 676px;
+                padding-right: 10%;
+                a {
+                    font-size: 18px;
                 }
-                overflow: hidden;
+                span {
+                    line-height: 26px;
+                }
             }
             button {
-                display: block;
-                margin: 15px 0 0 10px;
+                margin-left: 10px;
+                margin-bottom: 20px;
             }
-            div {
-                width: 100%;
-                margin: 0;
-                bottom: 30px;
-                font-size: 42px;
-            }
+        }
+        .book-now {
+            width: 100%;
+            height: fit-content;
+            margin-top: 0px;    
+            position: absolute;
+            top: 210px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            font-size: 42px;
+        }
+        .bg-img-container {
+            margin-left: 0px;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: repeat-y;
+            &#felver {
+                background-position: right;
+            } 
         }
     }
     ////ARTIST STOP///
@@ -222,7 +236,7 @@
         background-color: #FFCE85; //#FFCE85
         background-image: url(./images/banner.svg);
         background-position: bottom;
-        background-size: auto 100%;
+        background-size: 350%;
         background-repeat: no-repeat;
         background-attachment:local;
         a {

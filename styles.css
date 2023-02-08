@@ -27,13 +27,14 @@
 }
 @media only screen and (max-width: 768px) {
   .paragraf {
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .paragraf {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -47,13 +48,14 @@
 }
 @media only screen and (max-width: 768px) {
   .strong-paragraf {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .strong-paragraf {
     font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -447,12 +449,13 @@ header nav ul li a:hover {
 }
 header .logo {
   position: absolute;
+  width: 365px;
   top: 0px;
   left: 0px;
   z-index: 100;
 }
 header .logo img {
-  width: 80%;
+  width: 100%;
 }
 
 main {
@@ -597,78 +600,85 @@ main {
 }
 
 .artist-info {
-  border-top: 6px solid white;
-}
-.artist-info .bg-img-container {
-  margin-left: 250px;
-  padding-bottom: 20px;
-  height: 700px;
   position: relative;
-  background-size: cover;
-  background-position: center center;
+  border-top: 6px solid white;
+  height: 706px;
 }
-.artist-info .bg-img-container p {
-  margin-left: -250px;
-  margin-bottom: 20px;
+.artist-info .info-zip-container {
+  position: absolute;
+  top: 50px;
+}
+.artist-info .info-zip-container p {
+  margin-bottom: 10px;
   font-family: "Bitter", serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   color: white;
   -webkit-user-select: auto;
      -moz-user-select: auto;
       -ms-user-select: auto;
           user-select: auto;
-  max-height: 455px;
+  max-height: 446px;
   overflow: hidden;
-  padding-top: 50px;
   padding-right: 50%;
-  padding-bottom: 15px;
 }
-.artist-info .bg-img-container p span {
+.artist-info .info-zip-container p a {
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+}
+.artist-info .info-zip-container p span {
   padding: 2px;
-  line-height: 34px;
+  line-height: 30px;
   -webkit-user-select: auto;
      -moz-user-select: auto;
       -ms-user-select: auto;
           user-select: auto;
 }
-.artist-info .bg-img-container p span.red {
+.artist-info .info-zip-container p span.red {
   background-color: #ff7058;
   box-shadow: -3px 0 #ff7058, 3px 0 #ff7058;
 }
-.artist-info .bg-img-container p span.blue {
+.artist-info .info-zip-container p span.blue {
   background-color: #62cdf9;
   box-shadow: -3px 0 #62cdf9, 3px 0 #62cdf9;
 }
-.artist-info .bg-img-container p span.pink {
+.artist-info .info-zip-container p span.pink {
   color: #FF2113;
   background-color: #ffc8ff;
   box-shadow: -3px 0 #ffc8ff, 3px 0 #ffc8ff;
 }
-.artist-info .bg-img-container button {
-  margin-left: -150px;
+.artist-info .info-zip-container button {
+  margin-left: 100px;
 }
-.artist-info .bg-img-container button:hover {
+.artist-info .info-zip-container button:hover {
   cursor: pointer;
 }
-.artist-info .bg-img-container div {
-  margin-top: 20px;
-  margin-left: -250px;
-  width: calc(100% + 250px);
+.artist-info .book-now {
+  width: 100%;
+  margin-top: 30px;
+  position: absolute;
+  bottom: 30px;
   padding-top: 6px;
   padding-bottom: 6px;
-  position: absolute;
-  bottom: 50px;
   font-family: "Bungee Inline", cursive;
   font-weight: 400;
   font-size: 60px;
   text-align: center;
   color: white;
 }
-.artist-info .bg-img-container div:hover {
+.artist-info .book-now:hover {
   cursor: pointer;
   background: white;
   color: #62CDF9;
+}
+.artist-info .bg-img-container {
+  margin-left: 250px;
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
 }
 
 .banner {
@@ -794,9 +804,9 @@ footer .info a {
     z-index: 100;
   }
 }
-@media only screen and (max-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (max-width: 768px) and (min-width: 400px) and (max-width: 1024px) {
   header .logo img {
-    width: 300px;
+    width: 280px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -896,34 +906,52 @@ footer .info a {
 }
 @media only screen and (max-width: 768px) {
   .artist-info {
-    height: 1130px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: relative;
+  }
+  .artist-info .info-zip-container {
+    position: static;
+    margin-top: 10px;
+  }
+  .artist-info .info-zip-container p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    max-height: 676px;
+    padding-right: 10%;
+  }
+  .artist-info .info-zip-container p a {
+    font-size: 18px;
+  }
+  .artist-info .info-zip-container p span {
+    line-height: 26px;
+  }
+  .artist-info .info-zip-container button {
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  .artist-info .book-now {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 0px;
+    position: absolute;
+    top: 210px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 42px;
   }
   .artist-info .bg-img-container {
-    margin-left: 0;
+    margin-left: 0px;
     height: 300px;
-    background-size: auto 100%;
-    width: 100%;
-    padding-bottom: 0px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
   }
-  .artist-info .bg-img-container p {
-    margin: 0;
-    padding: 320px 10px 0 10px;
-    max-height: 1020px;
-    font-size: 16px;
-    overflow: hidden;
-  }
-  .artist-info .bg-img-container p span {
-    line-height: 28px;
-  }
-  .artist-info .bg-img-container button {
-    display: block;
-    margin: 15px 0 0 10px;
-  }
-  .artist-info .bg-img-container div {
-    width: 100%;
-    margin: 0;
-    bottom: 30px;
-    font-size: 42px;
+  .artist-info .bg-img-container#felver {
+    background-position: right;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -935,7 +963,7 @@ footer .info a {
     background-color: #FFCE85;
     background-image: url(./images/banner.svg);
     background-position: bottom;
-    background-size: auto 100%;
+    background-size: 350%;
     background-repeat: no-repeat;
     background-attachment: local;
   }
@@ -986,32 +1014,52 @@ footer .info a {
     font-size: 22px;
   }
   .artist-info {
-    height: 1000px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: relative;
   }
-  .artist-info .bg-img-container {
-    margin-left: 0;
-    height: 500px;
-    background-size: auto 100%;
-    width: 100%;
-    padding-bottom: 0px;
+  .artist-info .info-zip-container {
+    position: static;
+    margin-top: 10px;
   }
-  .artist-info .bg-img-container p {
-    margin: 0;
-    padding: 520px 20% 0 30px;
-    max-height: 910px;
+  .artist-info .info-zip-container p {
+    margin-bottom: 10px;
+    font-size: 20px;
+    max-height: 434px;
+    padding-right: 10%;
+  }
+  .artist-info .info-zip-container p a {
     font-size: 20px;
   }
-  .artist-info .bg-img-container p span {
+  .artist-info .info-zip-container p span {
     line-height: 28px;
   }
-  .artist-info .bg-img-container button {
-    display: block;
-    margin: 15px 0 0 30px;
+  .artist-info .info-zip-container button {
+    margin-left: 30px;
+    margin-bottom: 30px;
   }
-  .artist-info .bg-img-container div {
+  .artist-info .book-now {
     width: 100%;
-    margin: 0;
-    bottom: 30px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 0px;
+    position: absolute;
+    top: 380px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 60px;
+  }
+  .artist-info .bg-img-container {
+    margin-left: 0px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+  }
+  .artist-info .bg-img-container #felver {
+    background-position: right;
   }
   .banner {
     height: 350px;
@@ -1034,15 +1082,40 @@ footer .info a {
   #intro p {
     max-width: 70%;
   }
+  .artist-info {
+    height: 906px;
+  }
   .artist-info .bg-img-container {
     height: 900px;
+  }
+  .artist-info .info-zip-container p {
+    font-size: 24px;
+    max-height: 598px;
+  }
+  .artist-info .info-zip-container p a {
+    font-size: 24px;
+  }
+  .artist-info .info-zip-container p span {
+    line-height: 38px;
+  }
+  .artist-info .book-now {
+    bottom: 50px;
   }
 }
 @media only screen and (min-width: 2501px) {
   #intro p {
     max-width: 60%;
   }
+  .artist-info {
+    height: 906px;
+  }
   .artist-info .bg-img-container {
     height: 900px;
+  }
+  .artist-info p {
+    font-size: 24px;
+  }
+  .artist-info .book-now {
+    bottom: 50px;
   }
 }/*# sourceMappingURL=styles.css.map */

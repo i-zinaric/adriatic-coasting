@@ -5,8 +5,24 @@
         }
     }
     .artist-info {
+        height: 906px;
         .bg-img-container {
             height: 900px;
+        }
+        .info-zip-container {
+            p {
+                font-size: 24px;
+                max-height: 598px;
+                a {
+                    font-size: 24px;
+                }
+                span {
+                    line-height: 38px;
+                }
+            }
+        }
+        .book-now {
+            bottom: 50px;
         }
     }
 }
@@ -23,8 +39,15 @@
         }
     }
     .artist-info {
+        height: 906px;
         .bg-img-container {
             height: 900px;
+        }
+        p {
+            font-size: 24px;
+        }
+        .book-now {
+            bottom: 50px;
         }
     }
 }

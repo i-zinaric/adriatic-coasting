@@ -44,11 +44,12 @@ header {
     }
     .logo {
         position: absolute;
+        width: 365px;
         top: 0px;
         left: 0px;
         z-index: 100;
         img {
-        width: 80%; 
+        width: 100%; 
         }
     }
 }
@@ -190,38 +191,34 @@ main {
     }
 }
 .artist-info {
+    position: relative;
     border-top: $bb solid white;
-    .bg-img-container {
-        margin-left: 250px; // = pl-title -> da dobijemo pomak bg-img udesno
-        padding-bottom: 20px;
-        height: 700px;
-
-        position: relative;
-
-        background-size: cover;
-        background-position: center center;
-        // background-repeat: repeat;
+    height: 706px;
+    .info-zip-container {
+        position: absolute;
+        top: 50px;
         p {
-            margin-left: -250px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
 
             font-family: $bitter;
             font-weight: 500;
-            font-size: 20px;
+            font-size: 18px;
             color: white;
             user-select: auto;
 
-            max-height: 455px;
+            max-height: 446px;
             overflow: hidden;
-            
-            padding-top: 50px;
-            padding-right: 50%;
-            padding-bottom: 15px;
 
-            
+            padding-right: 50%;
+            a {
+                font-family: $bitter;
+                font-weight: 500;
+                font-size: 18px;
+                color: white;
+            }
             span {
                 padding: 2px;
-                line-height: 34px;
+                line-height: 30px;
                 user-select: auto;
                 &.red {
                     background-color: rgb($red, 1);
@@ -242,34 +239,40 @@ main {
             }
         }
         button {
-            margin-left: -150px; // je jednakon paddingu pl-small - 250px koliko je bg-img-cont pomaknut
-        
+            margin-left: 100px;
             &:hover {
                 cursor: pointer;
             }
         }
-        div {
-            margin-top: 20px; //isto kao padding-bottom u artist-info
-            margin-left: -250px;
-            width: calc(100% + 250px);
+    }
+    .book-now {
+        width: 100%;
+        margin-top: 30px;
 
-            padding-top: 6px;
-            padding-bottom: 6px;
+        position: absolute;
+        bottom: 30px;
 
-            position: absolute;
-            bottom: 50px;
+        padding-top: 6px;
+        padding-bottom: 6px;
 
-            font-family: $bungee;
-            font-weight: 400;
-            font-size: 60px;
-            text-align: center;
-            color: white;
-            &:hover {
-                cursor: pointer;
-                background: white;
-                color: $blue;
-            }
+        font-family: $bungee;
+        font-weight: 400;
+        font-size: 60px;
+        text-align: center;
+        color: white;
+        &:hover {
+            cursor: pointer;
+            background: white;
+            color: $blue;
         }
+    }
+    .bg-img-container {
+        margin-left: 250px; // = pl-title -> da dobijemo pomak bg-img udesno
+        height: 700px;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat-y;
     }
 }
 //artist stop

@@ -54,31 +54,47 @@
         font-size: 22px;
     }
     .artist-info {
-        height: 1000px;
-        .bg-img-container {
-            margin-left: 0;
-            height: 500px;
-            background-size: auto 100%;
-            width: 100%;
-            padding-bottom: 0px;
+        height: fit-content;
+        position: relative;
+        .info-zip-container {
+            position: static;
+            margin-top: 10px;
             p {
-                margin: 0;
-                padding: 520px 20% 0 30px;
-                max-height: 910px;
+                margin-bottom: 10px;
                 font-size: 20px;
+                max-height: 434px;
+                padding-right: 10%;
+                a {
+                    font-size: 20px;
+                }
                 span {
                     line-height: 28px;
                 }
             }
             button {
-                display: block;
-                margin: 15px 0 0 30px;
+                margin-left: 30px;
+                margin-bottom: 30px;
             }
-            div {
-                width: 100%;
-                margin: 0;
-                bottom: 30px
-            }
+        }
+        .book-now {
+            width: 100%;
+            height: fit-content;
+            margin-top: 0px;    
+            position: absolute;
+            top: 380px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            font-size: 60px;
+        }
+        .bg-img-container {
+            margin-left: 0px;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: repeat-y;
+            #felver {
+                background-position: right;
+            } 
         }
     }
     .banner {
