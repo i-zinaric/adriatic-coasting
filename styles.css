@@ -27,14 +27,14 @@
 }
 @media only screen and (max-width: 768px) {
   .paragraf {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .paragraf {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 28px;
   }
 }
 
@@ -48,14 +48,14 @@
 }
 @media only screen and (max-width: 768px) {
   .strong-paragraf {
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .strong-paragraf {
     font-size: 20px;
-    line-height: 26px;
+    line-height: 30px;
   }
 }
 
@@ -917,12 +917,12 @@ footer .info a {
   }
   .artist-info .info-zip-container p {
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 16px;
     max-height: 676px;
     padding-right: 10%;
   }
   .artist-info .info-zip-container p a {
-    font-size: 18px;
+    font-size: 16px;
   }
   .artist-info .info-zip-container p span {
     line-height: 26px;
@@ -1025,12 +1025,12 @@ footer .info a {
   }
   .artist-info .info-zip-container p {
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 18px;
     max-height: 434px;
     padding-right: 10%;
   }
   .artist-info .info-zip-container p a {
-    font-size: 20px;
+    font-size: 18px;
   }
   .artist-info .info-zip-container p span {
     line-height: 28px;
