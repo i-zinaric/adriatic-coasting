@@ -1,0 +1,145 @@
+@keyframes wheel-rotation {
+    100% {transform: rotate(360deg);}
+}
+
+
+#radio-header {
+    position: relative;
+
+    height: 500px;
+    background: url('./images/prugasto-sunce.svg') no-repeat bottom center/50% fixed, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
+    h2 {
+        padding-top: 210px;
+        padding-left: 10%px;
+        padding-right: 10%px;
+        font-size: 80px;
+    }
+    a {
+        position: absolute;
+        top: 4%;
+        right: 5%;
+    }
+}
+
+#radio-player {
+    background-color: $red;
+    padding-top: 100px;
+    padding-bottom: 130px;
+    img {
+        width: 100%;
+        display: block;
+        margin-bottom: 100px;
+    }
+    p {
+        margin-bottom: 40px;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+#music-library {
+    background-color: $sand;
+    h4 {
+        font-size: 70px;
+        color: $blue;
+        font-family: $bungee;
+        font-weight: 400;
+
+        padding: 120px 10% 80px 200px;
+    }
+    .wheels-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 100px;
+        #wheel-1 {
+            width: 300px;
+            height: 300px;
+            margin-right: 20px;
+            animation-name: wheel-rotation;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            img {
+                width: 300px;
+            }
+        }
+        #wheel-2 {
+            width: 300px;
+            height: 300px;
+            margin-left: 20px;
+            animation-name: wheel-rotation;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            img {
+                width: 300px;
+            }
+        }
+        p {
+            color: $red;
+            font-size: 24px;
+            margin-left: 50px;
+            margin-right: 50px;
+            line-height: 30px;
+        }
+    }
+    form {
+        width: 100%;
+        display: block;
+        .contact-item {
+            width: 75%;
+            display: block;
+            margin: 0 auto;
+            border-bottom:  $bb solid $blue;
+            padding-bottom: 5px;
+            margin-bottom: 30px;
+            label {
+                margin-left: 20px;
+                margin-right: 10px;
+                font-size: 24px;
+                font-weight: 500;
+                font-family: $bitter;
+                color: $blue;
+            }
+            input {
+                width: 70%;
+                background-color: $sand;
+                box-shadow: none;
+                border: none;
+
+                font-size: 24px;
+                font-weight: 500;
+                font-family: $bitter;
+                color: $blue;
+                &:focus {
+                    outline: none;
+                } 
+            }
+        }
+        button {
+            margin-top: 150px;
+            width: 100%;
+            background-color: $blue;
+            padding-top: 6px;
+            padding-bottom: 6px;
+
+            border: none;
+            box-shadow: none;
+
+            text-align: center;
+            font-family: $bungee;
+            font-size: 60px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: white;
+            
+            &:hover {
+                cursor: pointer;
+            }
+            &:active {
+                color: $sand;
+            }
+        }
+    }
+}

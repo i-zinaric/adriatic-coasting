@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radio Show</title>
+    <title>Adriatic Coasting - Radio Show</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400;1,700&family=Bungee+Inline&display=swap" rel="stylesheet">
@@ -12,40 +12,132 @@
 </head>
 <body>
 
+        <div id="closed-menu-mobile">
+            <h6 id="closed-menu-header-mobile">ADRIATIC COASTING</h6>
+            <button id="close-menu-button">
+                <img src="./images/mobile-x.svg" alt="close menu">
+            </button>
+            <button id="open-menu-button">
+                <img src="./images/mobile-y.svg" alt="open menu">
+            </button> 
+        </div>
+        <!-- mobile gumb za zatvaranje navigacije start -->
+        <!-- mobile gumb za zatvaranje navigacije stop -->
+        <!-- mobile navigacija stop -->
+
     <header>
         <!-- navigation start -->
         <nav>
             <ul>
                 <li>
-                    <a href="index.html" target="_blank">ADRIATIC COASTING</a>
+                    <a href="index.html" style="color: #FF7058">ADRIATIC COASTING</a>
                 </li>
 
                 <li>
-                    <a href="index.html#events" target="_blank">EVENTS</a>
+                    <a href="index.html#events">EVENTS</a>
                 </li>
 
                 <li>
-                    <a href="index.html#artist-agency" target="_blank">ARTIST AGENCY</a>
+                    <a href="index.html#artist-agency">ARTIST AGENCY</a>
                 </li>
 
                 <li>
-                    <a href="radio-show.html" style="color: #FF7058;">RADIO SHOW</a>
+                    <a href="radio-show.html">RADIO SHOW</a>
                 </li>
 
                 <li>
                     <a href="radio-show.html#music-library">MUSIC LIBRARY</a>
                 </li>
-
             </ul>
         </nav>
         <!-- navigation end -->
-        <!-- logo -->
         <div class="logo">
-            <a href="adriatic-coasting.html">
+            <a href="index.html">
                 <img src="./images/logo.svg" alt="Adriatic Coasting logo">
             </a>
         </div>
     </header>
+    
+
+    <main>
+
+        <section id="radio-header">
+            <div>
+                <a href="https://soundcloud.com/adriaticcoasting/sets/adriatic-coasting" target="_blank">
+                    <img src="./images/soundcloud-logo.svg" alt="soundcloud link">
+                </a>
+                <h2 class="musica-al-dente">MUSICA AL DENTE</h2>
+            </div>
+        </section>
+
+        <section id="radio-player">
+            <img src="./images/radio.svg" alt="radio player">
+            <p class="strong-paragraf">
+                There will be individual releases from the Adriatic Coasting family  and of course a few special guests along the way, but the first release will be compiled by Nick & Pepi. 
+            </p>
+            <p class="paragraf">
+                Nick & Pepi’s latest addition under the Adriatic Coasting banner is the record label Adriatic Coasting Records. The pair plan to have their first release out in the summer of 2020 and it will be the first in a series of Adriatic Coasting compilations. Expect the musical backdrop to take you around the world and then some but always with the Adriatic sea and sunshine in mind. 
+            </p>
+        </section>
+
+        <section id="music-library">
+            <h4>ADRIATIC COASTING MUSIC LIBRARY</h4>
+
+            <div class="wheels-container">
+                <div id="wheel-1">
+                    <img src="./images/wheel-1.svg" alt="wheel-1">
+                </div>
+                <p class="paragraf">
+                    Adriatic Coasting Internet radio uses “streaming” to transmit their archive of filtered hard to get high-quality music in 320 kbit/s to their users. You don't have to download every song and store it on your computer. We take care of your needs and update your playlists every 72 hours via our servers. We provide you music that sounds familiar to you but you never heard of, which makes you special and sophisticated. The implementation of our standalone device requires a stable internet connection of min 5 Mbps and an amplifier we connect to via RCA connector. There are no commands on our modules so third party interventions aren't possible from waiters, staff and employees in your object.
+                </p>
+                <div id="wheel-2">
+                    <img src="./images/wheel-2.svg" alt="wheel-2">
+                </div>
+            </div>
+
+            <form>
+                <div class="contact-item">
+                    <label for="establishment">establishment:</label>
+                    <input name="establishment">
+                </div>
+                <div class="contact-item">
+                    <label for="contact-person">contact person:</label>
+                    <input name="contact-person">
+                </div>
+                <div class="contact-item">
+                    <label for="e-mail">e-mail:</label>
+                    <input name="e-mail">
+                </div>
+                <div class="contact-item">
+                    <label for="phone">phone:</label>
+                    <input name="phone">
+                </div>
+                <button>SEND INQUIRY</button>
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <div class="info">
+                ADRIATIC COASTING
+            </div>
+            <div class="info">
+                OWNERSHIP: NICK COLGAN & PEPI HUBZIN
+            </div>
+            <div class="info">
+                E-MAIL: <a href="mailto: info@adriaticcoasting.com">INFO@ADRIATICCOASTING.COM</a>
+            </div>
+            <div class="info">
+                <a href="">PRESSKIT</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
 
 </body>
 </html>
