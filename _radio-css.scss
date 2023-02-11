@@ -24,12 +24,28 @@
 #radio-player {
     background-color: $red;
     padding-top: 100px;
-    padding-bottom: 130px;
-    img {
-        width: 100%;
-        display: block;
-        margin-bottom: 100px;
+    padding-bottom: 100px;
+
+    #player {
+        #frame {
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            height: 500px;
+            background-image: url(./images/radio.svg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: auto 80%;
+
+            iframe {
+                position: absolute;
+                top: 159px;
+                background-color: $red;
+            }
+        }
     }
+    
     p {
         margin-bottom: 40px;
         margin-left: 25%;
