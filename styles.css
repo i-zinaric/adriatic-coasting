@@ -828,6 +828,9 @@ footer .info a {
 }
 
 @media only screen and (max-width: 768px) {
+  * {
+    -webkit-text-size-adjust: 100%;
+  }
   #closed-menu-mobile {
     display: block;
     height: 40px;

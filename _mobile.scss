@@ -1,4 +1,8 @@
 @media only screen and (max-width: 768px) {
+
+    * {
+        -webkit-text-size-adjust:100%;
+    }
     
     #closed-menu-mobile {
         display: block;  // UVIJEK SE PRIKAZUJE
