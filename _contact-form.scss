@@ -1,30 +1,59 @@
+* {
+    overflow-x: hidden;
+}
+
 #contract-form-container {
     display: none;
+    position: fixed;
+    top: 10px;
+    left: 5%;
+    right: 5%;
+    @media only screen and (max-width: 768px) {
+        left: 2%;
+        right: 2%;
+    }
+    height: 100%;
+    z-index: 10000;
+    overflow-y: scroll;
 
     border: 1px solid $blue;
-
-    padding: 150px 200px 100px 230px;
-    position: fixed;
-    top: 20px;
-    width: 90vw;
-    overflow-y: scroll;
-    height: 3000px;
-    margin: 0 auto;
     background-color: white;
-    z-index: 10000;
+    padding: 100px 150px 100px 150px;
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        padding: 100px 70px 100px 70px;
+    }
+    @media only screen and (max-width: 768px) {
+        padding: 100px 20px 100px 20px;
+    }
+    #contract-form {
+        overflow-y: scroll;
+    }
     h4 {
         font-family: $bungee;
         font-weight: 400;
-        font-size: 70px;
+        font-size: 68px;
+        @media only screen and (max-width: 768px) {
+            font-size: 54px;
+            margin-bottom: 50px;
+        }
+        @media only screen and (max-width: 768px) {
+            font-size: 42px;
+            word-wrap: break-word;
+        }
         color: $pink;
-
         margin-bottom: 70px;
     }
-    #reset-contract-form {
+    #close-contract-form {
         display: inline-block;
         position: absolute;
-        top: 150px;
+        top: 50px;
         right: 150px;
+        @media only screen and (min-width: 769px) and (max-width: 1024px) {
+            right: 70px;
+        }
+        @media only screen and (max-width: 768px) {
+            left: 20px;
+        }
         width: 50px;
         height: 50px;
         background-color: white;
@@ -32,27 +61,38 @@
         box-shadow: none;
         &:hover {
             cursor: pointer;
+            background-color: $pink;
         }
         &:active {
             background-color: $pink;
         }
     }
     .input-item {
-        height: 30px;
         display: flex;
         justify-content: start;
-
-        margin-bottom: 40px;
-        
+        margin-bottom: 30px;
+        @media only screen and (max-width: 768px) {
+            flex-wrap: wrap;
+        }
     }
     label {
         flex-shrink: 0;
         padding-right: 10px;
+        margin-top: 4px;
 
         font-family: $bitter;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 30px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+        @media only screen and (min-width: 769px) and (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        @media only screen and (max-width: 768px){
+            font-size: 18px;
+            line-height: 18px;
+            margin-bottom: 3px;
+        } 
         color: $blue;
     }
     input {
@@ -62,27 +102,51 @@
         display: block;
         box-shadow: none;
         border: none;
-        border-bottom: $bb solid $blue;
+        border-bottom: 3px solid $blue;
 
         color: $blue;
-        font-size: 24px;
+        font-size: 20px;
+        line-height: 20px;
+        @media only screen and (min-width: 769px) and (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        @media only screen and (max-width: 768px) {
+            font-size: 18px;
+            line-height: 18px;
+            padding-left: 5px;
+        }
         font-weight: 500;
         font-family: $bitter;
         padding-left: 20px;
         &:focus {
+            padding-top: 1px;
+            padding-bottom: 1px;
             outline: none;
             color: white;
-            font-size: 24px;
+            font-size: 20px;
+            line-height: 20px;
+            @media only screen and (min-width: 769px) and (max-width: 1024px) {
+                font-size: 18px;
+                line-height: 18px;
+            }
+            @media only screen and (max-width: 768px) {
+                font-size: 16px;
+                line-height: 16px;
+                padding-left: 5px;
+                background-color: white;
+                border-top: 3px solid white;
+                color: $blue;
+            }
             font-weight: 500;
             font-family: $bitter;
             padding-left: 20px;
             background-color: $blue;
-            border-top: $bb solid $blue;
+            border-top: 3px solid $blue;
         }
         &[type=number]::-webkit-inner-spin-button, 
         &[type=number]::-webkit-outer-spin-button { 
         -webkit-appearance: none; 
-        margin: 0; 
         }
     }
     h6 {
@@ -97,18 +161,27 @@
     }
     p {
         margin-top: 110px;
+        margin-bottom: 80px;
 
         font-family: $bitter;
-        font-size: 24px;
+        font-size: 22px;
+        @media only screen and (min-width: 769px) and (max-width: 1024px) {
+            font-size: 20px;
+            line-height: 26px;
+            margin-top: 90px;
+        }
+        @media only screen and (max-width: 768px) {
+            margin-top: 70px;
+            margin-bottom: 70px;
+            font-size: 18px;
+            line-height: 26px;
+        }
         font-weight: 500;
         line-height: 30px;
         color: $blue;
-
-        user-select: auto;
     }
     #submit-contract-form {
         display: block;
-        margin-top: 80px;
         height: 100px;
         width: 100%;
         background-color: $blue;
@@ -116,7 +189,12 @@
         color: white;
         font-family: $bungee;
         font-weight: 400;
-        font-size: 68px;
+        font-size: 64px;
+        @media only screen and (max-width: 768px) {
+            font-size: 42px;
+            position: absolute;
+            left: 0px;
+        }
 
         border: none;
         box-shadow: none;

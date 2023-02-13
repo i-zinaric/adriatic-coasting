@@ -293,30 +293,65 @@
   background-image: url("./images/artists/zozo-b.jpg");
 }
 
+* {
+  overflow-x: hidden;
+}
+
 #contract-form-container {
   display: none;
-  border: 1px solid #62CDF9;
-  padding: 150px 200px 100px 230px;
   position: fixed;
-  top: 20px;
-  width: 90vw;
-  overflow-y: scroll;
-  height: 3000px;
-  margin: 0 auto;
-  background-color: white;
+  top: 10px;
+  left: 5%;
+  right: 5%;
+  height: 100%;
   z-index: 10000;
+  overflow-y: scroll;
+  border: 1px solid #62CDF9;
+  background-color: white;
+  padding: 100px 150px 100px 150px;
+}
+@media only screen and (max-width: 768px) {
+  #contract-form-container {
+    left: 2%;
+    right: 2%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #contract-form-container {
+    padding: 100px 70px 100px 70px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #contract-form-container {
+    padding: 100px 20px 100px 20px;
+  }
+}
+#contract-form-container #contract-form {
+  overflow-y: scroll;
 }
 #contract-form-container h4 {
   font-family: "Bungee Inline", cursive;
   font-weight: 400;
-  font-size: 70px;
+  font-size: 68px;
   color: #FFC8FF;
   margin-bottom: 70px;
 }
-#contract-form-container #reset-contract-form {
+@media only screen and (max-width: 768px) {
+  #contract-form-container h4 {
+    font-size: 54px;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #contract-form-container h4 {
+    font-size: 42px;
+    word-wrap: break-word;
+  }
+}
+#contract-form-container #close-contract-form {
   display: inline-block;
   position: absolute;
-  top: 150px;
+  top: 50px;
   right: 150px;
   width: 50px;
   height: 50px;
@@ -324,26 +359,55 @@
   border: none;
   box-shadow: none;
 }
-#contract-form-container #reset-contract-form:hover {
-  cursor: pointer;
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #contract-form-container #close-contract-form {
+    right: 70px;
+  }
 }
-#contract-form-container #reset-contract-form:active {
+@media only screen and (max-width: 768px) {
+  #contract-form-container #close-contract-form {
+    left: 20px;
+  }
+}
+#contract-form-container #close-contract-form:hover {
+  cursor: pointer;
+  background-color: #FFC8FF;
+}
+#contract-form-container #close-contract-form:active {
   background-color: #FFC8FF;
 }
 #contract-form-container .input-item {
-  height: 30px;
   display: flex;
   justify-content: start;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 768px) {
+  #contract-form-container .input-item {
+    flex-wrap: wrap;
+  }
 }
 #contract-form-container label {
   flex-shrink: 0;
   padding-right: 10px;
+  margin-top: 4px;
   font-family: "Bitter", serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
   color: #62CDF9;
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #contract-form-container label {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #contract-form-container label {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 3px;
+  }
 }
 #contract-form-container input {
   padding-top: 1px;
@@ -352,26 +416,58 @@
   display: block;
   box-shadow: none;
   border: none;
-  border-bottom: 6px solid #62CDF9;
+  border-bottom: 3px solid #62CDF9;
   color: #62CDF9;
-  font-size: 24px;
+  font-size: 20px;
+  line-height: 20px;
   font-weight: 500;
   font-family: "Bitter", serif;
   padding-left: 20px;
 }
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #contract-form-container input {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #contract-form-container input {
+    font-size: 18px;
+    line-height: 18px;
+    padding-left: 5px;
+  }
+}
 #contract-form-container input:focus {
+  padding-top: 1px;
+  padding-bottom: 1px;
   outline: none;
   color: white;
-  font-size: 24px;
+  font-size: 20px;
+  line-height: 20px;
   font-weight: 500;
   font-family: "Bitter", serif;
   padding-left: 20px;
   background-color: #62CDF9;
-  border-top: 6px solid #62CDF9;
+  border-top: 3px solid #62CDF9;
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #contract-form-container input:focus {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #contract-form-container input:focus {
+    font-size: 16px;
+    line-height: 16px;
+    padding-left: 5px;
+    background-color: white;
+    border-top: 3px solid white;
+    color: #62CDF9;
+  }
 }
 #contract-form-container input[type=number]::-webkit-inner-spin-button, #contract-form-container input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
-  margin: 0;
 }
 #contract-form-container h6 {
   margin-top: 100px;
@@ -385,30 +481,49 @@
 }
 #contract-form-container p {
   margin-top: 110px;
+  margin-bottom: 80px;
   font-family: "Bitter", serif;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 500;
   line-height: 30px;
   color: #62CDF9;
-  -webkit-user-select: auto;
-     -moz-user-select: auto;
-          user-select: auto;
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #contract-form-container p {
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 90px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #contract-form-container p {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
 #contract-form-container #submit-contract-form {
   display: block;
-  margin-top: 80px;
   height: 100px;
   width: 100%;
   background-color: #62CDF9;
   color: white;
   font-family: "Bungee Inline", cursive;
   font-weight: 400;
-  font-size: 68px;
+  font-size: 64px;
   border: none;
   box-shadow: none;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  #contract-form-container #submit-contract-form {
+    font-size: 42px;
+    position: absolute;
+    left: 0px;
+  }
 }
 #contract-form-container #submit-contract-form:hover {
   cursor: pointer;
@@ -429,6 +544,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
 }
 
 header {
