@@ -353,8 +353,8 @@
   position: absolute;
   top: 50px;
   right: 150px;
-  width: 50px;
-  height: 50px;
+  width: 36px;
+  height: 36px;
   background-color: white;
   border: none;
   box-shadow: none;
@@ -423,12 +423,14 @@
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   #contract-form-container input {
     font-size: 18px;
+    border-radius: 0px;
   }
 }
 @media only screen and (max-width: 768px) {
   #contract-form-container input {
     font-size: 18px;
     padding-left: 5px;
+    border-radius: 0px;
   }
 }
 #contract-form-container input:focus {
@@ -1226,11 +1228,11 @@ footer .info a {
   position: relative;
   height: 500px;
   background: url("./images/prugasto-sunce.svg") no-repeat bottom center/50% fixed, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
+  padding-top: 210px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 #radio-header h2 {
-  padding-top: 210px;
-  padding-left: 10% px;
-  padding-right: 10% px;
   font-size: 80px;
 }
 #radio-header a {
@@ -1255,6 +1257,8 @@ footer .info a {
   background-size: auto 80%;
 }
 #radio-player #player #frame iframe {
+  width: 500px;
+  height: 100px;
   position: absolute;
   top: 159px;
   background-color: #FF7058;
@@ -1282,32 +1286,26 @@ footer .info a {
   padding-bottom: 100px;
 }
 #music-library .wheels-container #wheel-1 {
-  width: 300px;
-  height: 300px;
-  margin-right: 20px;
+  flex-shrink: 0;
+  width: 290px;
+  height: 290px;
   animation-name: wheel-rotation;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-}
-#music-library .wheels-container #wheel-1 img {
-  width: 300px;
 }
 #music-library .wheels-container #wheel-2 {
-  width: 300px;
-  height: 300px;
-  margin-left: 20px;
+  flex-shrink: 0;
+  width: 290px;
+  height: 290px;
   animation-name: wheel-rotation;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-}
-#music-library .wheels-container #wheel-2 img {
-  width: 300px;
 }
 #music-library .wheels-container p {
   color: #FF7058;
-  font-size: 24px;
+  font-size: 22px;
   margin-left: 50px;
   margin-right: 50px;
   line-height: 30px;
@@ -1337,7 +1335,7 @@ footer .info a {
   background-color: #FFF5DC;
   box-shadow: none;
   border: none;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   font-family: "Bitter", serif;
   color: #62CDF9;
@@ -1365,4 +1363,190 @@ footer .info a {
 }
 #music-library form button:active {
   color: #FFF5DC;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  #music-library h4 {
+    padding-left: 100px;
+    font-size: 62px;
+  }
+  #music-library .wheels-container {
+    padding-right: 100px;
+    padding-left: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #music-library .wheels-container #wheel-1 {
+    width: 50%;
+    height: 50%;
+  }
+  #music-library .wheels-container #wheel-2 {
+    width: 50%;
+    height: 50%;
+  }
+  #music-library .wheels-container p {
+    order: 3;
+    width: 80vw;
+    margin-top: 50px;
+    font-size: 18px;
+  }
+  #music-library form .contact-item label {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #radio-header {
+    position: relative;
+    height: 200px;
+    background: url("./images/prugasto-sunce.svg") no-repeat bottom center/70%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 70px;
+  }
+  #radio-header h2 {
+    font-size: 32px;
+  }
+  #radio-header a {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 4%;
+    right: 5%;
+  }
+  #radio-header a img {
+    width: 100%;
+    height: 100%;
+  }
+  #radio-player {
+    background-color: #FF7058;
+    padding-top: 30px;
+    padding-bottom: 20%;
+    background-image: url(./images/radio.svg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+  #radio-player #player #frame {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100px;
+    background-image: none;
+  }
+  #radio-player #player #frame iframe {
+    width: 100%;
+    height: 65px;
+    position: absolute;
+    top: 10px;
+    background-color: #FF7058;
+  }
+  #radio-player p {
+    margin-bottom: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  #music-library {
+    background-color: #FFF5DC;
+  }
+  #music-library h4 {
+    font-size: 42px;
+    color: #FFF5DC;
+    font-family: "Bungee Inline", cursive;
+    font-weight: 400;
+    background-color: #FF7058;
+    padding: 40px 10px 20px 10px;
+  }
+  #music-library .wheels-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 0px;
+    flex-wrap: wrap;
+    background-color: #FF7058;
+  }
+  #music-library .wheels-container #wheel-1 {
+    flex-shrink: 0;
+    width: 30%;
+    height: 30%;
+    animation-name: wheel-rotation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  #music-library .wheels-container #wheel-2 {
+    flex-shrink: 0;
+    width: 30%;
+    height: 30%;
+    animation-name: wheel-rotation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  #music-library .wheels-container p {
+    color: #FF7058;
+    font-size: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 50px 10px 80px 10px;
+    line-height: 24px;
+    background-color: #FFF5DC;
+    order: 3;
+    width: 100vw;
+    margin-top: 50px;
+  }
+  #music-library form {
+    width: 100%;
+    display: block;
+  }
+  #music-library form .contact-item {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+    border-bottom: 6px solid #62CDF9;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+  }
+  #music-library form .contact-item label {
+    margin-left: 0px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Bitter", serif;
+    color: #62CDF9;
+  }
+  #music-library form .contact-item input {
+    width: 70%;
+    background-color: #FFF5DC;
+    box-shadow: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Bitter", serif;
+    color: #62CDF9;
+  }
+  #music-library form .contact-item input:focus {
+    outline: none;
+  }
+  #music-library form button {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #62CDF9;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+    font-family: "Bungee Inline", cursive;
+    font-size: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+  }
+  #music-library form button:hover {
+    cursor: pointer;
+  }
+  #music-library form button:active {
+    color: #FFF5DC;
+  }
 }/*# sourceMappingURL=styles.css.map */

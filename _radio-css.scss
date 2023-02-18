@@ -3,15 +3,18 @@
 }
 
 
+
+
 #radio-header {
     position: relative;
 
     height: 500px;
     background: url('./images/prugasto-sunce.svg') no-repeat bottom center/50% fixed, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
+
+    padding-top: 210px;
+    padding-left: 10%;
+    padding-right: 10%;
     h2 {
-        padding-top: 210px;
-        padding-left: 10%px;
-        padding-right: 10%px;
         font-size: 80px;
     }
     a {
@@ -39,6 +42,8 @@
             background-size: auto 80%;
 
             iframe {
+                width: 500px;
+                height: 100px;
                 position: absolute;
                 top: 159px;
                 background-color: $red;
@@ -69,32 +74,28 @@
         justify-content: space-between;
         padding-bottom: 100px;
         #wheel-1 {
-            width: 300px;
-            height: 300px;
-            margin-right: 20px;
+            flex-shrink: 0;
+            width: 290px;
+            height: 290px;
+
             animation-name: wheel-rotation;
             animation-duration: 10s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
-            img {
-                width: 300px;
-            }
         }
         #wheel-2 {
-            width: 300px;
-            height: 300px;
-            margin-left: 20px;
+            flex-shrink: 0;
+            width: 290px;
+            height: 290px;
+            
             animation-name: wheel-rotation;
             animation-duration: 10s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
-            img {
-                width: 300px;
             }
-        }
         p {
             color: $red;
-            font-size: 24px;
+            font-size: 22px;
             margin-left: 50px;
             margin-right: 50px;
             line-height: 30px;
@@ -124,7 +125,7 @@
                 box-shadow: none;
                 border: none;
 
-                font-size: 24px;
+                font-size: 20px;
                 font-weight: 500;
                 font-family: $bitter;
                 color: $blue;
@@ -155,6 +156,218 @@
             }
             &:active {
                 color: $sand;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    #music-library {
+        h4 {
+            padding-left: 100px;
+            font-size: 62px;
+        }
+        .wheels-container {
+            padding-right: 100px;
+            padding-left: 100px;
+            justify-content: center;
+            flex-wrap: wrap;
+            #wheel-1 {
+                width: 50%;
+                height: 50%;
+            }
+            #wheel-2 {
+                width: 50%;
+                height: 50%;
+            }
+            p {
+                order: 3;
+                width: 80vw;
+                margin-top: 50px;
+                font-size: 18px;
+            }
+        }
+        form {
+            .contact-item {
+                label {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #radio-header {
+        position: relative;
+    
+        height: 200px;
+        background: url('./images/prugasto-sunce.svg') no-repeat bottom center/70%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 70px;
+        h2 {
+            font-size: 32px;
+        }
+        a {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 4%;
+            right: 5%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    #radio-player {
+        background-color: $red;
+        padding-top: 30px;
+        padding-bottom: 20%;
+
+        background-image: url(./images/radio.svg);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    
+        #player {
+            #frame {
+                display: flex;
+                justify-content: center;
+                position: relative;
+    
+                height: 100px;
+                background-image: none;
+    
+                iframe {
+                    width: 100%;
+                    height: 65px;
+                    position: absolute;
+                    top: 10px;
+                    background-color: $red;
+                }
+            }
+        }
+        
+        p {
+            margin-bottom: 40px;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+    }
+
+
+    #music-library {
+        background-color: $sand;
+        h4 {
+            font-size: 42px;
+            color: $sand;
+            font-family: $bungee;
+            font-weight: 400;
+            background-color: $red;
+    
+            padding: 40px 10px 20px 10px;
+        }
+        .wheels-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 0px;
+            flex-wrap: wrap;
+            background-color: $red;
+            #wheel-1 {
+                flex-shrink: 0;
+                width: 30%;
+                height: 30%;
+    
+                animation-name: wheel-rotation;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            #wheel-2 {
+                flex-shrink: 0;
+                width: 30%;
+                height: 30%;
+                
+                animation-name: wheel-rotation;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                }
+            p {
+                color: $red;
+                font-size: 16px;
+                margin-left: 0px;
+                margin-right: 0px;
+                padding: 50px 10px 80px 10px;
+                line-height: 24px;
+                background-color: $sand;
+
+                order: 3;
+                width: 100vw;
+                margin-top: 50px;
+            }
+        }
+        form {
+            width: 100%;
+            display: block;
+            .contact-item {
+                width: 95%;
+                display: block;
+                margin: 0 auto;
+                border-bottom:  $bb solid $blue;
+                padding-bottom: 5px;
+                margin-bottom: 30px;
+                label {
+                    margin-left: 0px;
+                    margin-right: 10px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    font-family: $bitter;
+                    color: $blue;
+                }
+                input {
+                    width: 70%;
+                    background-color: $sand;
+                    box-shadow: none;
+                    border: none;
+    
+                    font-size: 20px;
+                    font-weight: 500;
+                    font-family: $bitter;
+                    color: $blue;
+                    &:focus {
+                        outline: none;
+                    } 
+                }
+            }
+            button {
+                margin-top: 50px;
+                width: 100%;
+                background-color: $blue;
+                padding-top: 6px;
+                padding-bottom: 6px;
+    
+                border: none;
+                box-shadow: none;
+    
+                text-align: center;
+                font-family: $bungee;
+                font-size: 48px;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: white;
+                
+                &:hover {
+                    cursor: pointer;
+                }
+                &:active {
+                    color: $sand;
+                }
             }
         }
     }
