@@ -20,3 +20,14 @@ closeButton.addEventListener('click', function() {
 })
 /////////////////////
 
+
+
+//SEND INQUIRY RADIO SHOW/////
+radioshowForm = document.querySelector('#rs-form');
+
+radioshowForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    document.querySelector('#rs-submit-button').style.display = "none";
+    document.querySelector('#rs-submit-message').style.display = "block"
+})
+

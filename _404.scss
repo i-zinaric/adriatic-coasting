@@ -1,0 +1,30 @@
+#main-404 {
+    background: url('./images/valic-20x9.svg') center 90%/80px repeat-x, linear-gradient(180deg, #62CDF9 0%, #FF7058 45.83%, #FFC8FF 100%);
+    height: 600px;
+    padding-top: 150px;
+
+    position: relative;
+    z-index: 0;
+    @media only screen and (max-width: 768px) {
+        background: url('./images/valic-20x9.svg') center 90%/50px repeat-x, linear-gradient(180deg, #62CDF9 0%, #FF7058 45.83%, #FFC8FF 100%);
+        padding-top: 30px;
+    }
+    p {
+        position: relative;
+        z-index: 2;
+        font-family: $bungee;
+        font-size: 70px;
+        font-weight: 400;
+        color: white;
+    }
+    a {
+        position: relative;
+    }
+    img {
+        height: 500px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 60%;
+    }
+}

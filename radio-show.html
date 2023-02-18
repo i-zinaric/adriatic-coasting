@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+
+    <meta property="og:title" content="Adriatic Coasting Radio Show">
+    <meta property="og:description" content="MUSICA AL DENTE">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="./images/og-image-ac.jpg">
+
     <title>Adriatic Coasting - Radio Show</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -12,6 +20,7 @@
 </head>
 <body>
 
+        <!-- mobile gumb za zatvaranje navigacije start -->
         <div id="closed-menu-mobile">
             <h6 id="closed-menu-header-mobile">ADRIATIC COASTING</h6>
             <button id="close-menu-button">
@@ -21,7 +30,6 @@
                 <img src="./images/mobile-y.svg" alt="open menu">
             </button> 
         </div>
-        <!-- mobile gumb za zatvaranje navigacije start -->
         <!-- mobile gumb za zatvaranje navigacije stop -->
         <!-- mobile navigacija stop -->
 
@@ -97,24 +105,27 @@
                 <img id="wheel-2" src="./images/wheel-2.svg" alt="wheel-2">
             </div>
 
-            <form>
+            <form action="" method="post" id="rs-form">
                 <div class="contact-item">
                     <label for="establishment">establishment</label>
-                    <input name="establishment">
+                    <input type="text" required name="establishment">
                 </div>
                 <div class="contact-item">
                     <label for="contact-person">contact person</label>
-                    <input name="contact-person">
+                    <input type="text" required name="contact-person">
                 </div>
                 <div class="contact-item">
                     <label for="e-mail">e-mail</label>
-                    <input name="e-mail">
+                    <input type="email" required name="e-mail">
                 </div>
                 <div class="contact-item">
                     <label for="phone">phone</label>
                     <input name="phone">
                 </div>
-                <button>SEND INQUIRY</button>
+                <button id="rs-submit-button">SEND INQUIRY</button>
+                <div id="rs-submit-message" class="strong-paragraf">
+                    Thank you! Your submission has been received!
+                </div>
             </form>
 
         </section>
@@ -138,7 +149,7 @@
         </div>
     </footer>
 
-    <script src="script-rs.js"></script>
+    <script src="radio-show-scritpt.js"></script>
 
 
 </body>

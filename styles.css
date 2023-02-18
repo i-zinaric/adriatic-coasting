@@ -529,6 +529,38 @@
   color: white;
 }
 
+#main-404 {
+  background: url("./images/valic-20x9.svg") center 90%/80px repeat-x, linear-gradient(180deg, #62CDF9 0%, #FF7058 45.83%, #FFC8FF 100%);
+  height: 600px;
+  padding-top: 150px;
+  position: relative;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+  #main-404 {
+    background: url("./images/valic-20x9.svg") center 90%/50px repeat-x, linear-gradient(180deg, #62CDF9 0%, #FF7058 45.83%, #FFC8FF 100%);
+    padding-top: 30px;
+  }
+}
+#main-404 p {
+  position: relative;
+  z-index: 2;
+  font-family: "Bungee Inline", cursive;
+  font-size: 70px;
+  font-weight: 400;
+  color: white;
+}
+#main-404 a {
+  position: relative;
+}
+#main-404 img {
+  height: 500px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 60%;
+}
+
 #closed-menu-mobile {
   display: none;
 }
@@ -1363,6 +1395,14 @@ footer .info a {
 }
 #music-library form button:active {
   color: #FFF5DC;
+}
+#music-library form #rs-submit-message {
+  margin-top: 100px;
+  display: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #FF7058;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1200px) {

@@ -155,6 +155,14 @@
                 color: $sand;
             }
         }
+        #rs-submit-message {
+            margin-top: 100px;
+            display: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            background-color: $red;
+        }
     }
 }
 

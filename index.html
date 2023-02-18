@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
+
+    <meta property="og:title" content="Adriatic Coasting">
+    <meta property="og:description" content="MUSICA AL DENTE">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="./images/og-image-ac.jpg">
+
     <title>Adriatic Coasting</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -32,7 +39,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="adriatic-coasting.html" style="color: #FF7058">ADRIATIC COASTING</a>
+                    <a href="index.html" style="color: #FF7058">ADRIATIC COASTING</a>
                 </li>
 
                 <li>
@@ -54,7 +61,7 @@
         </nav>
         <!-- navigation end -->
         <div class="logo">
-            <a href="adriatic-coasting.html">
+            <a href="index.html">
                 <img src="./images/logo.svg" alt="Adriatic Coasting logo">
             </a>
         </div>
@@ -733,134 +740,161 @@
 
         <h4>CONTRACTING FORM</h4>
 
-        <form id="contract-form">
+        <form action="" method="post" id="contract-form">
 
             <button type="reset" id="close-contract-form"><img src="./images/mobile-x.svg" alt="close-button"></button><br>
 
             <div class="input-item">
                 <label for="artist">artist</label>
-                <input type="text" name="artist"><br>
+                <input type="text" required name="artist">
             </div>
 
             <div class="input-item">
                 <label for="date-of-event">date of event</label>
-                <input type="text" name="date-of-event"><br>
+                <input type="text" required name="date-of-event">
             </div>
 
             <div class="input-item">
                 <label for="set-time-from-to">set time from / to</label>
-                <input type="text" name="set-time-from-to"><br>
+                <input type="text" name="set-time-from-to">
             </div>
 
             <div class="input-item">
                 <label for="day-time-night-time">day time / night time set</label>
-                <input type="text" name="day-time-night-time"><br> 
+                <input type="text" name="day-time-night-time">
             </div>
 
             <div class="input-item">
                 <label for="name-of-event">name of event</label>
-                <input type="text" name="name-of-event"><br>
-            </div>
-
-            <div class="input-item">
-                <label for="name-of-event">name of event</label>
-                <input type="text" name="name-of-event"><br>
+                <input type="text" name="name-of-event">
             </div>
 
             <div class="input-item">
                 <label for="event-website">event website</label>
-                <input type="text" name="event-website"><br>
+                <input type="text" name="event-website">
             </div>
 
             <div class="input-item">
                 <label for="announcement-date">announcement date</label>
-                <input type="text" name="announcement-date"><br>
+                <input type="text" name="announcement-date">
             </div>
 
             <h6>Club / Venue / Event</h6>
 
             <div class="input-item">
+                <label for="club-name">club name</label>
+                <input type="text" name="club-name">
+            </div>
+
+            <div class="input-item">
+                <label for="club-street">street</label>
+                <input type="text" name="club-street">
+            </div>
+
+            <div class="input-item">
+                <label for="club-zipcode-city">zip code / city</label>
+                <input type="text" name="announcement-date">
+            </div>
+
+            <div class="input-item">
+                <label for="total-venue-capacity">total venue capacity</label>
+                <input type="text" name="total-venue-capacity">
+            </div>
+
+            <div class="input-item">
+                <label for="floor-capacity">floor capacity</label>
+                <input type="text" name="floor-capacity">
+            </div>
+
+            <div class="input-item">
+                <label for="doors-open-close">doors open / close</label>
+                <input type="text" name="doors-open-close">
+            </div>
+
+            <h6>Promoter (Invoice and Contract Details)</h6>
+
+            <div class="input-item">
                 <label for="company-name">company name</label>
-                <input type="text" name="company-name"><br>
+                <input type="text" required name="company-name">
             </div>
 
             <div class="input-item">
                 <label for="street">street</label>
-                <input type="text" name="street"><br>
+                <input type="text" name="street">
             </div>
 
             <div class="input-item">
-                <label for="zip-code-city">zip code / city</label>
-                <input type="text" name="zip-code-city"><br>
+                <label for="zipcode-city">zip code / city</label>
+                <input type="text" name="zipcode-city">
             </div>
 
             <div class="input-item">
                 <label for="country">country</label>
-                <input type="text" name="country"><br>
+                <input type="text" name="country">
             </div>
 
             <div class="input-item">
                 <label for="vat-number">VAT NUMBER</label>
-                <input type="number" name="vat-number"><br>
+                <input type="number" name="vat-number">
             </div>
 
             <div class="input-item">
                 <label for="responsible-person">responsible person (stated on contract)</label>
-                <input type="text" name="responsible-person"><br>
+                <input type="text" name="responsible-person">
             </div>
 
             <div class="input-item">
                 <label for="responsible-person-phone-email">responsible person phone + email</label>
-                <input type="text" name="responsible-person-phone-email"><br>
+                <input type="text" required name="responsible-person-phone-email">
             </div>
 
             <h6>Fees</h6>
 
             <div class="input-item">
                 <label for="artist-fee">artist fee</label>
-                <input type="text" name="artist-fee"><br>
+                <input type="text" name="artist-fee">
             </div>
 
             <div class="input-item">
                 <label for="production-fee">production fee</label>
-                <input type="text" name="production-fee"><br>
+                <input type="text" name="production-fee">
             </div>
 
             <div class="input-item">
                 <label for="booking-fee">booking fee</label>
-                <input type="text" name="booking-fee"><br>
+                <input type="text" name="booking-fee">
             </div>
 
             <div class="input-item">
                 <label for="expenses-covered">expenses covered</label>
-                <input type="text" name="expenses-covered"><br>
+                <input type="text" name="expenses-covered">
             </div>
 
             <div class="input-item">
                 <label for="artist-invoice-details">artist invoice details (taxes, dates, payment method)</label>
-                <input type="text" name="artist-invoice-details"><br>
+                <input type="text" name="artist-invoice-details">
             </div>
 
             <div class="input-item">
                 <label for="a1-form-required">A1 form required</label>
-                <input type="text" name="a1-form-required"><br>
+                <input type="text" name="a1-form-required">
             </div>
 
             <br>
 
             <div class="input-item">
                 <label for="sponsoring">sponsoring</label>
-                <input type="text" name="sponsoring"><br>
+                <input type="text" name="sponsoring">
             </div>
 
             <div class="input-item">
                 <label for="entrance-fee">entrance fee</label>
-                <input type="text" name="entrance-fee"><br>
+                <input type="text" name="entrance-fee">
             </div>
 
             <div class="input-item">
                 <label for="confirmed-line-up">confirmed line-up</label>
-                <input type="text" name="confirmed-line-up"><br>
+                <input type="text" name="confirmed-line-up">
             </div>
             
             <p>

@@ -30,10 +30,10 @@ artistBoxes.forEach((box) => {
 })
 //otvori box ako je zatvoren (display: none; skrol na početak diva)
 artistButtons.forEach((button) => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', () => {
         const toHide = button.nextElementSibling;
                
-        if (toHide.style.display == 'none') {
+        if (toHide.style.display === 'none') {
             artistBoxes.forEach((box) => {
                 box.style.display = 'none';
             })
@@ -48,18 +48,30 @@ artistButtons.forEach((button) => {
 
 
 //////////////////BOOK NOW BUTTONS///////////
-const contractForm = document.querySelector('#contract-form-container');
+const contractFormContainer = document.querySelector('#contract-form-container');
 const bookNowButtons = document.querySelectorAll('.book-now ');
-
 
 bookNowButtons.forEach((button) => {
     button.addEventListener('click', function() {
-        contractForm.style.display = 'block';        
+        contractFormContainer.style.display = 'block';        
     })
 })
-
+///CLOSE FORM////
 const closeContractForm = document.querySelector('#close-contract-form');
 closeContractForm.addEventListener('click', () => {
-    contractForm.style.display = 'none';
+    contractFormContainer.style.display = 'none';
 })
 
+
+//DELAY SUBMITING FORM//
+const contractForm = document.getElementById('contract-form');
+const submitContractFormButton = document.getElementById('submit-contract-form');
+
+contractForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    submitContractFormButton.innerText = 'SUCCESS'
+    setTimeout(() => {
+        contractForm.submit();
+        window.reload();
+    }, 2000)
+})
