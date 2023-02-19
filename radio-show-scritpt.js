@@ -29,5 +29,8 @@ radioshowForm.addEventListener('submit', (event) => {
     event.preventDefault();
     document.querySelector('#rs-submit-button').style.display = "none";
     document.querySelector('#rs-submit-message').style.display = "block"
+    setTimeout(() => {
+        radioshowForm.submit();
+    }, 2000)
 })
 

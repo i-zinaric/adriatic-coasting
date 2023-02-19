@@ -72,6 +72,5 @@ contractForm.addEventListener('submit', (event) => {
     submitContractFormButton.innerText = 'SUCCESS'
     setTimeout(() => {
         contractForm.submit();
-        window.reload();
     }, 2000)
 })
