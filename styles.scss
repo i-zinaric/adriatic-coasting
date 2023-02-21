@@ -67,15 +67,20 @@ main {
 }
 .bg-gradient {
     position: relative;
+    max-height: 100%;
+    overflow-y: hidden;
     #sunce {
         position: absolute;
         left: 250px; //x-os (JS)
         top: 200px; //y-os (JS)
         z-index: 0;
+        
     }
 }
 #intro {
     position: relative;
+    max-height: 100%;
+    overflow-y: hidden;
 
     padding-top: 80px;
     padding-bottom: 120px;
@@ -103,6 +108,9 @@ main {
 //events box
 .events-container {
     margin-bottom: 50px;
+    
+    position: relative;
+    z-index: 1;
     &:first-of-type {
         padding-top: 100px;
     }
@@ -226,19 +234,19 @@ main {
                 line-height: 30px;
                 &.red {
                     background-color: rgb($red, 1);
-                    box-shadow: -3px 0 rgb($red, 1),
-                                3px 0 rgb($red, 1);
+                    box-shadow: -15px 0 rgb($red, 1),
+                                15px 0 rgb($red, 1);
                 }
                 &.blue {
                     background-color: rgb($blue, 1);
-                    box-shadow: -3px 0 rgb($blue, 1),
-                                3px 0 rgb($blue, 1);
+                    box-shadow: -15px 0 rgb($blue, 1),
+                                15px 0 rgb($blue, 1);
                 }
                 &.pink {
                     color: $jedna-jedina-crvena;
                     background-color: rgb($pink, 1);
-                    box-shadow: -3px 0 rgb($pink, 1),
-                                3px 0 rgb($pink, 1);
+                    box-shadow: -15px 0 rgb($pink, 1),
+                                15px 0 rgb($pink, 1);
                 }
             }
         }

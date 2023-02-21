@@ -28,14 +28,13 @@
     .banner {
         height: 500px;
         padding-top: 190px;
+        background: url('./images/prugasto-sunce.svg') no-repeat center bottom/40% fixed, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
     }
 }
 
 
 
 ///EXTRA LARGE///
-///
-//
 @media only screen and (min-width: 2501px) {
     #intro {
         p {

@@ -90,7 +90,7 @@
             color: $red;
             margin-left: 50px;
             margin-right: 50px;
-            width: 49%;
+            width: 50%;
             flex-shrink: 0;
         }
     }
@@ -100,11 +100,11 @@
         #contact-item-container {
             margin-bottom: 100px;
             .contact-item {
-                width: 75%;
                 display: block;
-                margin: 0 auto;
-                border-bottom:  $bb solid $blue;
+                margin-left: 230px;
+                margin-right: 230px;
                 padding-bottom: 5px;
+                border-bottom:  $bb solid $blue;
                 margin-bottom: 30px;
                 label {
                     margin-left: 20px;
@@ -115,7 +115,6 @@
                     color: $blue;
                 }
                 input {
-                    width: 70%;
                     background-color: $sand;
                     box-shadow: none;
                     border: none;
@@ -160,6 +159,43 @@
         }
     }
 }
+//////MAIN RADIO SHOW END ////////////////
+
+
+
+//////////LARGE//////////////
+@media only screen and (min-width: 1601px) {
+    #radio-header {    
+        height: 500px;
+        padding-top: 190px;
+        background: url('./images/prugasto-sunce.svg') no-repeat center 450px/40% fixed, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
+    }
+    #music-library {
+        h4 {
+            margin-right: 30%;
+        }
+        .wheels-container {
+            padding-bottom: 100px;
+            padding-left: 100px;
+            padding-right: 100px;
+            #wheel-1 {
+                width: 400px;
+                height: 400px;
+            }
+            #wheel-2 {
+                width: 400px;
+                height: 400px;
+                }
+            p {
+                margin-left: 20px;
+                margin-right: 20px;
+                padding-top: 50px;
+            }
+        }
+    }
+}
+/////LARGE END///////
+
 
 
 //////////SMALL//////////////
