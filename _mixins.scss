@@ -9,11 +9,30 @@
     font-weight: 400;
     font-size: 72px;
     color: white;
+    line-height: 72px;
     @media only screen and (max-width: 768px) {
         font-size: 58px;
+        line-height: 58px;
     }
     @media only screen and (min-width: 769px) and (max-width: 1024px) {
         font-size: 64px;
+        line-height: 64px;
+    }
+}
+
+.musica-al-dente {
+    display: block;
+    font-family: $bungee;
+    font-size: 80px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    @media only screen and (max-width: 768px) {
+        font-size: 38px;
+    }
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        font-size: 62px;
     }
 }
 
@@ -46,6 +65,14 @@
     @media only screen and (min-width: 769px) and (max-width: 1024px) {
         font-size: 20px;
         line-height: 30px;
+    }
+    @media only screen and (min-width: 1601px) {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    @media only screen and (min-width: 2501px) {
+        font-size: 28px;
+        line-height: 38px;
     }
 }
 
@@ -100,15 +127,7 @@
 }
 
 
-.musica-al-dente {
-    display: block;
-    font-family: $bungee;
-    font-size: 90px;
-    font-weight: 400;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-}
+
 
 
 

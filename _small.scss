@@ -98,13 +98,9 @@
         }
     }
     .banner {
-        height: 350px;
+        height: 400px;
         padding-top: 150px;
-        background-position: bottom;
-        background-size: auto 80%;
-        a {
-            font-size: 72px; 
-        }
+        background: url('./images/prugasto-sunce.svg') no-repeat center 450px/70% fixed, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
     }
     footer {
         height: 240px;

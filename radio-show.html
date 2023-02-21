@@ -95,7 +95,7 @@
         </section>
 
         <section id="music-library">
-            <h4>ADRIATIC COASTING MUSIC LIBRARY</h4>
+            <h4 class="main-title pl-title">ADRIATIC COASTING MUSIC LIBRARY</h4>
 
             <div class="wheels-container">
                 <img id="wheel-1" src="./images/wheel-1.svg" alt="wheel-1">
@@ -106,21 +106,23 @@
             </div>
 
             <form action="" method="post" id="rs-form">
-                <div class="contact-item">
-                    <label for="establishment">establishment</label>
-                    <input type="text" required name="establishment">
-                </div>
-                <div class="contact-item">
-                    <label for="contact-person">contact person</label>
-                    <input type="text" required name="contact-person">
-                </div>
-                <div class="contact-item">
-                    <label for="e-mail">e-mail</label>
-                    <input type="email" required name="e-mail">
-                </div>
-                <div class="contact-item">
-                    <label for="phone">phone</label>
-                    <input name="phone">
+                <div id="contact-item-container">
+                    <div class="contact-item">
+                        <label for="establishment">establishment</label>
+                        <input type="text" required name="establishment">
+                    </div>
+                    <div class="contact-item">
+                        <label for="contact-person">contact person</label>
+                        <input type="text" required name="contact-person">
+                    </div>
+                    <div class="contact-item">
+                        <label for="e-mail">e-mail</label>
+                        <input type="email" required name="e-mail">
+                    </div>
+                    <div class="contact-item">
+                        <label for="phone">phone</label>
+                        <input name="phone">
+                    </div>
                 </div>
                 <button id="rs-submit-button">SEND INQUIRY</button>
                 <div id="rs-submit-message" class="strong-paragraf">

@@ -165,8 +165,8 @@
             position: static;
         }
         a {
-            padding-top: 16px;
-            padding-bottom: 16px;
+            // padding-top: 16px;
+            // padding-bottom: 16px;
             text-align: center;
             text-decoration: none;
             font-family: $bitter;
@@ -234,20 +234,10 @@
     .banner {
         padding-left: 30px;
         padding-right: 30px;
+        padding-top: 75px;
 
         height: 200px;
-        padding-top: 65px;
-        background-color: #FFCE85; //#FFCE85
-        background-image: url(./images/banner.svg);
-        background-position: bottom;
-        background-size: 350%;
-        background-repeat: no-repeat;
-        background-attachment:local;
-        a {
-        font-size: 38px;
-        line-height: 38px;
-        font-weight: 400;
-        }
+        background: url('./images/prugasto-sunce.svg') no-repeat center 70px/60%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
     }
     //banner stop
 

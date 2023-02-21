@@ -74,3 +74,67 @@ contractForm.addEventListener('submit', (event) => {
         contractForm.submit();
     }, 2000)
 })
+
+
+///get scroll direction//
+let scrollingDown = false;
+let scrollingUp = false;
+
+const getScrollDirection = () => {
+    const scrollPosition = window.scrollY;
+    window.addEventListener('scroll', () => {
+        const newScrollPosition = window.scrollY;
+        if ((newScrollPosition > scrollPosition) && (window.scrollY > 0)) {
+            scrollingDown = true;
+            scrollingUp = false;
+        } else if (newScrollPosition < scrollPosition && (window.scrollY > 0)) {
+            scrollingUp = true;
+            scrollingDown = false;
+        }
+    })
+}
+window.addEventListener('scroll', getScrollDirection)
+//////////////////////////END///
+
+
+let addX = 250;
+let addY = 200;
+let counterX = 0;
+window.addEventListener('scroll', () => {
+    if (scrollingDown) {
+        ///// -3, -2, -1, 0, 1, 2
+        ///// -9, -4, -1, 0, -1, 4
+        if (counterX <= 15) {
+            addX = addX + 5;
+            addY = addY - 5;
+            counterX++
+        } else if (counterX > 15 && counterX <= 25) {
+            addX = addX + 5;
+            addY = addY + 0;
+            counterX++
+        } else if (counterX > 20 && counterX <= 70) {
+            addX = addX + 5;
+            addY = addY + 5;
+            counterX++
+        }   else if (counterX > 70 && counterX <= 120) {
+            addX = addX + 4;
+            addY = addY + 7;
+            counterX++
+        } else if (counterX > 120 && counterX <= 250) {
+            addX = addX + 3;
+            addY = addY + 7;
+            counterX++
+        } 
+        // else if (counterX > 170 && counterX < 200) {
+        //     addX = addX + 5;
+        //     addY = addY + 9;
+        //     counterX++
+        // }
+        
+        sunce.style.left = `${addX}px`;
+        sunce.style.top = `${addY}px`
+    }
+});
+
+
+

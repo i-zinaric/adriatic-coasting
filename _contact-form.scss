@@ -120,7 +120,7 @@
             padding-top: 1px;
             padding-bottom: 1px;
             outline: none;
-            color: white;
+            color: $blue;
             font-size: 20px;
             @media only screen and (min-width: 769px) and (max-width: 1024px) {
                 font-size: 18px;
@@ -135,8 +135,7 @@
             font-weight: 500;
             font-family: $bitter;
             padding-left: 20px;
-            background-color: $blue;
-            border-top: 3px solid $blue;
+            background-color: white;
         }
         &[type=number]::-webkit-inner-spin-button, 
         &[type=number]::-webkit-outer-spin-button { 
@@ -145,7 +144,7 @@
     }
     h6 {
         margin-top: 100px;
-        margin-bottom: 60px;
+        margin-bottom: 30px;
         font-family: $bitter;
         font-size: 24px;
         font-weight: 900;

@@ -7,15 +7,38 @@
   font-weight: 400;
   font-size: 72px;
   color: white;
+  line-height: 72px;
 }
 @media only screen and (max-width: 768px) {
   .main-title {
     font-size: 58px;
+    line-height: 58px;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .main-title {
     font-size: 64px;
+    line-height: 64px;
+  }
+}
+
+.musica-al-dente {
+  display: block;
+  font-family: "Bungee Inline", cursive;
+  font-size: 80px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+@media only screen and (max-width: 768px) {
+  .musica-al-dente {
+    font-size: 38px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .musica-al-dente {
+    font-size: 62px;
   }
 }
 
@@ -56,6 +79,18 @@
   .strong-paragraf {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+@media only screen and (min-width: 1601px) {
+  .strong-paragraf {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+@media only screen and (min-width: 2501px) {
+  .strong-paragraf {
+    font-size: 28px;
+    line-height: 38px;
   }
 }
 
@@ -109,19 +144,8 @@
   background-color: #FFC8FF;
 }
 
-.musica-al-dente {
-  display: block;
-  font-family: "Bungee Inline", cursive;
-  font-size: 90px;
-  font-weight: 400;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-}
-
 .btn-pink {
   width: 170px;
-  height: 50px;
   max-width: 100%;
   max-height: 100px;
   background-color: #FFC8FF;
@@ -143,7 +167,6 @@
 
 .btn-red {
   width: 170px;
-  height: 50px;
   max-width: 100%;
   max-height: 100px;
   background-color: #FF7058;
@@ -165,7 +188,6 @@
 
 .btn-blue {
   width: 170px;
-  height: 50px;
   max-width: 100%;
   max-height: 100px;
   background-color: #62CDF9;
@@ -437,13 +459,12 @@
   padding-top: 1px;
   padding-bottom: 1px;
   outline: none;
-  color: white;
+  color: #62CDF9;
   font-size: 20px;
   font-weight: 500;
   font-family: "Bitter", serif;
   padding-left: 20px;
-  background-color: #62CDF9;
-  border-top: 3px solid #62CDF9;
+  background-color: white;
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   #contract-form-container input:focus {
@@ -464,7 +485,7 @@
 }
 #contract-form-container h6 {
   margin-top: 100px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   font-family: "Bitter", serif;
   font-size: 24px;
   font-weight: 900;
@@ -621,8 +642,8 @@ main {
 }
 .bg-gradient #sunce {
   position: absolute;
-  left: 260px;
-  top: 250px;
+  left: 250px;
+  top: 200px;
   z-index: 0;
 }
 
@@ -710,8 +731,6 @@ main {
   top: 10px;
 }
 .events-button a {
-  padding-top: 16px;
-  padding-bottom: 16px;
   text-align: center;
   text-decoration: none;
   font-family: "Bitter", serif;
@@ -765,12 +784,9 @@ main {
   font-weight: 500;
   font-size: 18px;
   color: white;
-  -webkit-user-select: auto;
-     -moz-user-select: auto;
-          user-select: auto;
   max-height: 446px;
   overflow: hidden;
-  padding-right: 50%;
+  padding-right: 40%;
 }
 .artist-info .info-zip-container p a {
   font-family: "Bitter", serif;
@@ -781,9 +797,6 @@ main {
 .artist-info .info-zip-container p span {
   padding: 2px;
   line-height: 30px;
-  -webkit-user-select: auto;
-     -moz-user-select: auto;
-          user-select: auto;
 }
 .artist-info .info-zip-container p span.red {
   background-color: #ff7058;
@@ -831,9 +844,9 @@ main {
 }
 
 .banner {
-  height: 500px;
-  padding-top: 190px;
-  background: url("./images/prugasto-sunce.svg") no-repeat bottom center/45% fixed, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
+  height: 400px;
+  padding-top: 140px;
+  background: url("./images/prugasto-sunce.svg") no-repeat center bottom/40% fixed, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
 }
 
 footer {
@@ -1024,8 +1037,6 @@ footer .info a {
     position: static;
   }
   .events-button a {
-    padding-top: 16px;
-    padding-bottom: 16px;
     text-align: center;
     text-decoration: none;
     font-family: "Bitter", serif;
@@ -1092,19 +1103,9 @@ footer .info a {
   .banner {
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 75px;
     height: 200px;
-    padding-top: 65px;
-    background-color: #FFCE85;
-    background-image: url(./images/banner.svg);
-    background-position: bottom;
-    background-size: 350%;
-    background-repeat: no-repeat;
-    background-attachment: local;
-  }
-  .banner a {
-    font-size: 38px;
-    line-height: 38px;
-    font-weight: 400;
+    background: url("./images/prugasto-sunce.svg") no-repeat center 70px/60%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1194,13 +1195,9 @@ footer .info a {
     background-position: right;
   }
   .banner {
-    height: 350px;
+    height: 400px;
     padding-top: 150px;
-    background-position: bottom;
-    background-size: auto 80%;
-  }
-  .banner a {
-    font-size: 72px;
+    background: url("./images/prugasto-sunce.svg") no-repeat center 450px/70% fixed, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
   }
   footer {
     height: 240px;
@@ -1233,6 +1230,10 @@ footer .info a {
   .artist-info .book-now {
     bottom: 50px;
   }
+  .banner {
+    height: 500px;
+    padding-top: 190px;
+  }
 }
 @media only screen and (min-width: 2501px) {
   #intro p {
@@ -1258,14 +1259,11 @@ footer .info a {
 }
 #radio-header {
   position: relative;
-  height: 500px;
-  background: url("./images/prugasto-sunce.svg") no-repeat bottom center/50% fixed, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
-  padding-top: 210px;
+  height: 400px;
+  padding-top: 140px;
+  background: url("./images/prugasto-sunce.svg") no-repeat center bottom/40% fixed, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
   padding-left: 10%;
   padding-right: 10%;
-}
-#radio-header h2 {
-  font-size: 80px;
 }
 #radio-header a {
   position: absolute;
@@ -1275,8 +1273,8 @@ footer .info a {
 
 #radio-player {
   background-color: #FF7058;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 #radio-player #player #frame {
   display: flex;
@@ -1297,28 +1295,28 @@ footer .info a {
 }
 #radio-player p {
   margin-bottom: 40px;
-  margin-left: 25%;
-  margin-right: 25%;
+  width: 45%;
+  margin: 30px auto;
 }
 
 #music-library {
   background-color: #FFF5DC;
 }
 #music-library h4 {
-  font-size: 70px;
   color: #62CDF9;
-  font-family: "Bungee Inline", cursive;
-  font-weight: 400;
-  padding: 120px 10% 80px 200px;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  padding-right: 10%;
 }
 #music-library .wheels-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 #music-library .wheels-container #wheel-1 {
-  flex-shrink: 0;
   width: 290px;
   height: 290px;
   animation-name: wheel-rotation;
@@ -1327,7 +1325,6 @@ footer .info a {
   animation-timing-function: linear;
 }
 #music-library .wheels-container #wheel-2 {
-  flex-shrink: 0;
   width: 290px;
   height: 290px;
   animation-name: wheel-rotation;
@@ -1337,16 +1334,19 @@ footer .info a {
 }
 #music-library .wheels-container p {
   color: #FF7058;
-  font-size: 22px;
   margin-left: 50px;
   margin-right: 50px;
-  line-height: 30px;
+  width: 49%;
+  flex-shrink: 0;
 }
 #music-library form {
   width: 100%;
   display: block;
 }
-#music-library form .contact-item {
+#music-library form #contact-item-container {
+  margin-bottom: 100px;
+}
+#music-library form #contact-item-container .contact-item {
   width: 75%;
   display: block;
   margin: 0 auto;
@@ -1354,15 +1354,15 @@ footer .info a {
   padding-bottom: 5px;
   margin-bottom: 30px;
 }
-#music-library form .contact-item label {
+#music-library form #contact-item-container .contact-item label {
   margin-left: 20px;
   margin-right: 10px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   font-family: "Bitter", serif;
   color: #62CDF9;
 }
-#music-library form .contact-item input {
+#music-library form #contact-item-container .contact-item input {
   width: 70%;
   background-color: #FFF5DC;
   box-shadow: none;
@@ -1372,11 +1372,10 @@ footer .info a {
   font-family: "Bitter", serif;
   color: #62CDF9;
 }
-#music-library form .contact-item input:focus {
+#music-library form #contact-item-container .contact-item input:focus {
   outline: none;
 }
 #music-library form button {
-  margin-top: 150px;
   width: 100%;
   background-color: #62CDF9;
   padding-top: 6px;
@@ -1392,23 +1391,29 @@ footer .info a {
 }
 #music-library form button:hover {
   cursor: pointer;
-}
-#music-library form button:active {
-  color: #FFF5DC;
+  background-color: #FFC8FF;
 }
 #music-library form #rs-submit-message {
-  margin-top: 100px;
   display: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  height: 84px;
+  padding-top: 26px;
   text-align: center;
   background-color: #FF7058;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1200px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #radio-header {
+    height: 400px;
+    padding-top: 150px;
+    background: url("./images/prugasto-sunce.svg") no-repeat bottom center/50% fixed, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
+  }
+  #radio-player p {
+    margin-bottom: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
   #music-library h4 {
     padding-left: 100px;
-    font-size: 62px;
   }
   #music-library .wheels-container {
     padding-right: 100px;
@@ -1430,21 +1435,19 @@ footer .info a {
     margin-top: 50px;
     font-size: 18px;
   }
-  #music-library form .contact-item label {
+  #music-library form #contact-item-container .contact-item label {
     font-size: 20px;
+    margin-left: 0;
   }
 }
 @media only screen and (max-width: 768px) {
   #radio-header {
     position: relative;
+    padding-top: 75px;
+    padding-left: 30px;
+    padding-right: 30px;
     height: 200px;
-    background: url("./images/prugasto-sunce.svg") no-repeat bottom center/70%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 80px;
-  }
-  #radio-header h2 {
-    font-size: 32px;
+    background: url("./images/prugasto-sunce.svg") no-repeat center 70px/60%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
   }
   #radio-header a {
     width: 50px;
@@ -1513,6 +1516,8 @@ footer .info a {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 0px;
     flex-wrap: wrap;
     background-color: #FF7058;
@@ -1540,7 +1545,7 @@ footer .info a {
     font-size: 16px;
     margin-left: 0px;
     margin-right: 0px;
-    padding: 50px 10px 80px 10px;
+    padding: 30px 10px 80px 10px;
     line-height: 24px;
     background-color: #FFF5DC;
     order: 3;
@@ -1551,38 +1556,42 @@ footer .info a {
     width: 100%;
     display: block;
   }
-  #music-library form .contact-item {
-    width: 95%;
-    display: block;
-    margin: 0 auto;
-    border-bottom: 6px solid #62CDF9;
-    padding-bottom: 5px;
-    margin-bottom: 30px;
+  #music-library form #contact-item-container {
+    margin-bottom: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
-  #music-library form .contact-item label {
+  #music-library form #contact-item-container .contact-item {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    border-bottom: 6px solid #62CDF9;
+  }
+  #music-library form #contact-item-container .contact-item label {
     display: block;
     margin-left: 0px;
-    margin-right: 10px;
+    margin-right: 0px;
     font-size: 18px;
     font-weight: 500;
     font-family: "Bitter", serif;
     color: #62CDF9;
   }
-  #music-library form .contact-item input {
-    width: 70%;
+  #music-library form #contact-item-container .contact-item input {
+    width: 100%;
     background-color: #FFF5DC;
     box-shadow: none;
     border: none;
+    margin-right: 0px;
     font-size: 16px;
     font-weight: 500;
     font-family: "Bitter", serif;
     color: #62CDF9;
   }
-  #music-library form .contact-item input:focus {
+  #music-library form #contact-item-container .contact-item input:focus {
     outline: none;
   }
   #music-library form button {
-    margin-top: 50px;
     width: 100%;
     background-color: #62CDF9;
     padding-top: 6px;
