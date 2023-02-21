@@ -315,6 +315,14 @@
   background-image: url("./images/artists/zozo-b.jpg");
 }
 
+#dj-brka {
+  background-image: url("./images/artists/dj-brka-r.jpg");
+}
+
+#leftfoot-dj {
+  background-image: url("./images/artists/leftfoot-p.jpg");
+}
+
 * {
   overflow-x: hidden;
 }
