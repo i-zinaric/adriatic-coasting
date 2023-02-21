@@ -44,8 +44,7 @@
     }
     
     p {
-        margin-bottom: 40px;
-        width: 45%;
+        width: 40%;
         margin: 30px auto;
     }
 }
@@ -54,7 +53,6 @@
     background-color: $sand;
     h4 {
         color: $blue;
-
         padding-top: 60px;
         padding-bottom: 80px;
         padding-right: 10%;
@@ -90,7 +88,7 @@
             color: $red;
             margin-left: 50px;
             margin-right: 50px;
-            width: 50%;
+            width: 43%;
             flex-shrink: 0;
         }
     }
@@ -130,15 +128,12 @@
             }
         }
         button {
+            height: 90px;
             width: 100%;
             background-color: $blue;
-            padding-top: 6px;
-            padding-bottom: 6px;
-
             border: none;
             box-shadow: none;
 
-            text-align: center;
             font-family: $bungee;
             font-size: 60px;
             font-weight: 400;
@@ -149,13 +144,20 @@
                 cursor: pointer;
                 background-color: $pink;
             }
+            div {
+                margin: auto;
+                padding: 6px;
+            }
         }
         #rs-submit-message {
             display: none;
-            height: 84px;
-            padding-top: 26px;
+            height: 90px;
             text-align: center;
             background-color: $red;
+            div {
+                padding: 6px;
+                line-height: 90px;
+            }
         }
     }
 }
@@ -208,9 +210,7 @@
 
     #radio-player {
         p {
-            margin-bottom: 40px;
-            margin-left: 20%;
-            margin-right: 20%;
+            width: 50%;
         }
     }
 
@@ -233,7 +233,9 @@
             }
             p {
                 order: 3;
-                width: 80vw;
+                width: 100%;
+                margin-left: 100px;
+                margin-right: 100px;
                 margin-top: 50px;
                 font-size: 18px;
             }
@@ -241,15 +243,14 @@
         form {
             #contact-item-container {
                 .contact-item {
-                    label {
-                        font-size: 20px;
-                        margin-left: 0;
-                    }
+                    margin-left: 100px;
+                    margin-right: 100px;
                 }
             }           
         }
     }
 }
+////SMALL END/////
 
 
 
@@ -258,18 +259,15 @@
     #radio-header {
         position: relative;
     
-        padding-top: 75px;
+        padding-top: 70px;
         padding-left: 30px;
         padding-right: 30px;
         
         height: 200px;
-        background: url('./images/prugasto-sunce.svg') no-repeat center 70px/60%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
+        background: url('./images/prugasto-sunce.svg') no-repeat center bottom/60%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
         a {
             width: 50px;
             height: 50px;
-            position: absolute;
-            top: 4%;
-            right: 5%;
             img {
                 width: 100%;
                 height: 100%;
@@ -302,11 +300,11 @@
         }
         
         p {
-            margin-left: 0;
-            margin-right: 0;
-            margin-bottom: 40px;
+            width: 100%;
+            margin: 20px 0;
             padding-left: 10px;
             padding-right: 10px;
+
             &:last-of-type {
                 margin-bottom: 20px;
             }
@@ -328,13 +326,10 @@
     #music-library {
         background-color: $sand;
         h4 {
+            background-color: $red;
+            padding: 20px 10px;
             font-size: 42px;
             color: $sand;
-            font-family: $bungee;
-            font-weight: 400;
-            background-color: $red;
-    
-            padding: 20px 10px;
         }
         .wheels-container {
             width: 100%;
@@ -349,97 +344,58 @@
                 flex-shrink: 0;
                 width: 30%;
                 height: 30%;
-    
-                animation-name: wheel-rotation;
-                animation-duration: 10s;
-                animation-iteration-count: infinite;
-                animation-timing-function: linear;
             }
             #wheel-2 {
                 flex-shrink: 0;
                 width: 30%;
                 height: 30%;
-                
-                animation-name: wheel-rotation;
-                animation-duration: 10s;
-                animation-iteration-count: infinite;
-                animation-timing-function: linear;
                 }
             p {
-                color: $red;
-                font-size: 16px;
+                background-color: $sand;
+                margin-top: 50px;
                 margin-left: 0px;
                 margin-right: 0px;
-                padding: 30px 10px 80px 10px;
+                padding: 30px 10px 50px 10px;
+                color: $red;
+                font-size: 16px;
                 line-height: 24px;
-                background-color: $sand;
 
                 order: 3;
-                width: 100vw;
-                margin-top: 50px;
+                width: 100%;
             }
         }
         form {
-            width: 100%;
-            display: block;
             #contact-item-container {
                 margin-bottom: 40px;
                 padding-right: 10px;
                 padding-left: 10px;
                 .contact-item {
-                    width: 100%;
                     display: block;
-                    margin-bottom: 30px;
-                    padding-bottom: 5px;
-                    
-                    border-bottom:  $bb solid $blue;
+                    margin-left: 0px;
+                    margin-right: 0px;
                     label {
                         display: block;
                         margin-left: 0px;
                         margin-right: 0px;
                         font-size: 18px;
-                        font-weight: 500;
-                        font-family: $bitter;
-                        color: $blue;
                     }
                     input {
-                        width: 100%;
-                        background-color: $sand;
-                        box-shadow: none;
-                        border: none;
-                        margin-right: 00px;
-        
+                        width: 100%;        
                         font-size: 16px;
-                        font-weight: 500;
-                        font-family: $bitter;
-                        color: $blue;
-                        &:focus {
-                            outline: none;
-                        } 
                     }
                 }
             }
             button {
-                width: 100%;
-                background-color: $blue;
-                padding-top: 6px;
-                padding-bottom: 6px;
-    
-                border: none;
-                box-shadow: none;
-    
-                text-align: center;
-                font-family: $bungee;
-                font-size: 48px;
-                font-weight: 400;
-                text-transform: uppercase;
-                color: white;
-                
-                &:hover {
-                    cursor: pointer;
-                }
-                &:active {
-                    color: $sand;
+                min-height: 70px;
+                font-size: 38px;
+            }
+            #rs-submit-message {
+                display: none;
+                min-height: 70px;
+                div {
+                    line-height: 85px;
+                    font-size: 13px;
+                    padding: 0 6px;
                 }
             }
         }
