@@ -1469,12 +1469,16 @@ footer .info a {
     top: 100px;
   }
   #radio-player p {
-    width: 50%;
+    width: 54%;
+    margin: 0 auto 30px;
   }
   #music-library h4 {
     padding-left: 100px;
+    padding-top: 40px;
+    padding-bottom: 50px;
   }
   #music-library .wheels-container {
+    padding-bottom: 70px;
     padding-right: 100px;
     padding-left: 100px;
     justify-content: space-around;
@@ -1495,6 +1499,9 @@ footer .info a {
     margin-right: 100px;
     margin-top: 50px;
     font-size: 18px;
+  }
+  #music-library form #contact-item-container {
+    margin-bottom: 35px;
   }
   #music-library form #contact-item-container .contact-item {
     margin-left: 100px;
