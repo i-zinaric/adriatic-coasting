@@ -45,7 +45,7 @@
 .paragraf {
   font-family: "Bitter", serif;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 26px;
   color: white;
 }
 @media only screen and (max-width: 768px) {
@@ -57,7 +57,7 @@
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .paragraf {
     font-size: 18px;
-    line-height: 28px;
+    line-height: 26px;
   }
 }
 
@@ -77,8 +77,8 @@
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .strong-paragraf {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 24px;
+    line-height: 34px;
   }
 }
 @media only screen and (min-width: 1601px) {
@@ -793,7 +793,7 @@ main {
   top: 50px;
 }
 .artist-info .info-zip-container p {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-family: "Bitter", serif;
   font-weight: 500;
   font-size: 18px;
@@ -1325,7 +1325,7 @@ footer .info a {
 #music-library .wheels-container {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding-bottom: 100px;
   padding-left: 50px;
   padding-right: 50px;
@@ -1442,8 +1442,8 @@ footer .info a {
     height: 400px;
   }
   #music-library .wheels-container p {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
     padding-top: 50px;
   }
 }
