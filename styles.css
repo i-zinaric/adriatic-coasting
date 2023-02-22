@@ -71,8 +71,8 @@
 }
 @media only screen and (max-width: 768px) {
   .strong-paragraf {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 22px;
+    line-height: 32px;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -894,9 +894,9 @@ footer .info a {
   }
   #closed-menu-mobile {
     display: block;
-    height: 40px;
+    height: 50px;
     text-align: right;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-right: 20px;
     position: relative;
   }
@@ -907,6 +907,7 @@ footer .info a {
     font-weight: 400;
     color: #FF7058;
     margin-right: 50px;
+    letter-spacing: 1px;
   }
   #closed-menu-mobile button {
     cursor: pointer;
@@ -916,7 +917,7 @@ footer .info a {
     height: 30px;
     position: absolute;
     right: 20px;
-    top: 4px;
+    top: 9px;
   }
   #closed-menu-mobile button img {
     display: inline-block;
@@ -1076,7 +1077,7 @@ footer .info a {
     margin-top: 10px;
   }
   .artist-info .info-zip-container p {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 16px;
     max-height: 676px;
     padding-right: 10%;
@@ -1089,7 +1090,7 @@ footer .info a {
   }
   .artist-info .info-zip-container button {
     margin-left: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .artist-info .book-now {
     width: 100%;
@@ -1119,12 +1120,12 @@ footer .info a {
     padding-right: 30px;
     padding-top: 70px;
     height: 200px;
-    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/60%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
+    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/60%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
   }
 }
 @media only screen and (max-width: 768px) {
   footer {
-    height: 200px;
+    height: 160px;
   }
   footer .info {
     font-size: 15px;
@@ -1361,7 +1362,7 @@ footer .info a {
   display: block;
 }
 #music-library form #contact-item-container {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 #music-library form #contact-item-container .contact-item {
   display: block;
@@ -1449,6 +1450,9 @@ footer .info a {
     margin-right: 60px;
     padding-top: 50px;
   }
+  #music-library form #contact-item-container {
+    margin-bottom: 80px;
+  }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   #radio-header {
@@ -1478,7 +1482,7 @@ footer .info a {
     padding-bottom: 50px;
   }
   #music-library .wheels-container {
-    padding-bottom: 70px;
+    padding-bottom: 50px;
     padding-right: 100px;
     padding-left: 100px;
     justify-content: space-around;

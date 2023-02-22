@@ -94,7 +94,7 @@
         width: 100%;
         display: block;
         #contact-item-container {
-            margin-bottom: 100px;
+            margin-bottom: 50px;
             .contact-item {
                 display: block;
                 margin-left: 230px;
@@ -192,6 +192,11 @@
                 padding-top: 50px;
             }
         }
+        form {
+            #contact-item-container {
+                margin-bottom: 80px;
+            }
+        }
     }
 }
 /////LARGE END///////
@@ -232,7 +237,7 @@
             padding-bottom: 50px;
         }
         .wheels-container {
-            padding-bottom: 70px;
+            padding-bottom: 50px;
             padding-right: 100px;
             padding-left: 100px;
             justify-content: space-around;
