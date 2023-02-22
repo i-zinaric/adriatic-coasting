@@ -5,8 +5,8 @@
 #radio-header {
     position: relative;
     height: 400px;
-    padding-top: 140px;
-    background: url('./images/prugasto-sunce.svg') no-repeat center bottom/40% fixed, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
+    padding-top: 150px;
+    background: url('./images/prugasto-sunce.svg') no-repeat center bottom/40%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
     padding-left: 10%;
     padding-right: 10%;
     a {
@@ -32,13 +32,11 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-size: auto 80%;
-
             iframe {
                 width: 500px;
                 height: 100px;
                 position: absolute;
                 top: 159px;
-                background-color: $red;
             }
         }
     }
@@ -170,7 +168,7 @@
     #radio-header {    
         height: 500px;
         padding-top: 190px;
-        background: url('./images/prugasto-sunce.svg') no-repeat center 450px/40% fixed, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
+        background: url('./images/prugasto-sunce.svg') no-repeat center 450px/40%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
     }
     #music-library {
         h4 {
@@ -205,10 +203,22 @@
     #radio-header {    
         height: 300px;
         padding-top: 110px;
-        background: url('./images/prugasto-sunce.svg') no-repeat center 380px/50% fixed, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
+        background: url('./images/prugasto-sunce.svg') no-repeat center bottom/50%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
     }
 
     #radio-player {
+        padding-top: 0px;
+        #player {
+            #frame {
+                height: 350px;
+                background-size: auto 80%;
+                iframe {
+                    width: 375px;
+                    height: 110px;
+                    top: 100px;
+                }
+            }
+        }
         p {
             width: 50%;
         }
@@ -264,7 +274,7 @@
         padding-right: 30px;
         
         height: 200px;
-        background: url('./images/prugasto-sunce.svg') no-repeat center bottom/60%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
+        background: url('./images/prugasto-sunce.svg') no-repeat center bottom/60%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
         a {
             width: 50px;
             height: 50px;

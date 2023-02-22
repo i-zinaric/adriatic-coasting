@@ -859,8 +859,8 @@ main {
 
 .banner {
   height: 400px;
-  padding-top: 140px;
-  background: url("./images/prugasto-sunce.svg") no-repeat center bottom/40% fixed, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
+  padding-top: 150px;
+  background: url("./images/prugasto-sunce.svg") no-repeat center bottom/40%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
 }
 
 footer {
@@ -1215,7 +1215,7 @@ footer .info a {
   .banner {
     height: 300px;
     padding-top: 110px;
-    background: url("./images/prugasto-sunce.svg") no-repeat center 720px/50% fixed, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
+    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/50%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
   }
   footer {
     height: 240px;
@@ -1251,7 +1251,7 @@ footer .info a {
   .banner {
     height: 500px;
     padding-top: 190px;
-    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/40% fixed, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
+    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/40%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
   }
 }
 @media only screen and (min-width: 2501px) {
@@ -1279,8 +1279,8 @@ footer .info a {
 #radio-header {
   position: relative;
   height: 400px;
-  padding-top: 140px;
-  background: url("./images/prugasto-sunce.svg") no-repeat center bottom/40% fixed, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
+  padding-top: 150px;
+  background: url("./images/prugasto-sunce.svg") no-repeat center bottom/40%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -1310,7 +1310,6 @@ footer .info a {
   height: 100px;
   position: absolute;
   top: 159px;
-  background-color: #FF7058;
 }
 #radio-player p {
   width: 40%;
@@ -1427,7 +1426,7 @@ footer .info a {
   #radio-header {
     height: 500px;
     padding-top: 190px;
-    background: url("./images/prugasto-sunce.svg") no-repeat center 450px/40% fixed, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
+    background: url("./images/prugasto-sunce.svg") no-repeat center 450px/40%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
   }
   #music-library h4 {
     margin-right: 30%;
@@ -1455,7 +1454,19 @@ footer .info a {
   #radio-header {
     height: 300px;
     padding-top: 110px;
-    background: url("./images/prugasto-sunce.svg") no-repeat center 380px/50% fixed, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
+    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/50%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
+  }
+  #radio-player {
+    padding-top: 0px;
+  }
+  #radio-player #player #frame {
+    height: 350px;
+    background-size: auto 80%;
+  }
+  #radio-player #player #frame iframe {
+    width: 375px;
+    height: 110px;
+    top: 100px;
   }
   #radio-player p {
     width: 50%;
@@ -1497,7 +1508,7 @@ footer .info a {
     padding-left: 30px;
     padding-right: 30px;
     height: 200px;
-    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/60%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%);
+    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/60%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
   }
   #radio-header a {
     width: 50px;
