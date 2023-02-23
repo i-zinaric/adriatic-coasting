@@ -235,10 +235,9 @@
     .banner {
         padding-left: 30px;
         padding-right: 30px;
-        padding-top: 70px;
 
         height: 200px;
-        background: url('./images/prugasto-sunce.svg') no-repeat center bottom/60%, linear-gradient(180deg, #FFBD85, #FFAAB1 35%, #FF97DF 60%) fixed;
+        background: url('./images/prugasto-sunce.svg') no-repeat center bottom/60%, linear-gradient(180deg, #FFBD85, #FFAAB1 65%, #FF97DF 90%) fixed;
     }
     //banner stop
 
@@ -246,8 +245,8 @@
     footer {
         height: 160px;
         .info {
-            font-size: 15px;
-            line-height: 24px;
+            font-size: 14px;
+            line-height: 22px;
         }
     }
 }

@@ -24,7 +24,7 @@ closeButton.addEventListener('click', function() {
 //////GUMBI ZA OTVARANJE ARTIST INFO//////
 const artistButtons = document.querySelectorAll('.artist-name');
 const artistBoxes = document.querySelectorAll('.artist-info');
-//zatvori sve boxeve
+//prvo zatvori sve boxeve
 artistBoxes.forEach((box) => {
     box.style.display = 'none';
 })
@@ -45,24 +45,31 @@ artistButtons.forEach((button) => {
         }
     })
 })
+////END ARTIST INFO/////////////////////
 
 
-//////////////////BOOK NOW BUTTONS///////////
+
+//////////////////BOOK NOW BUTTONS - OPEN FROM : CLOSE FORM///////////
 const contractFormContainer = document.querySelector('#contract-form-container');
 const bookNowButtons = document.querySelectorAll('.book-now ');
+const closeContractForm = document.querySelector('#close-contract-form');
 
 bookNowButtons.forEach((button) => {
     button.addEventListener('click', function() {
-        contractFormContainer.style.display = 'block';        
+        //open
+        contractFormContainer.style.display = 'block';
+        //close (button i escape)
+        document.addEventListener('keydown', (key) => {
+            console.log(key);
+            if (key.key === 'Escape') {
+                contractFormContainer.style.display = 'none';
+            }
+        })
+        closeContractForm.addEventListener('click', () => {
+            contractFormContainer.style.display = 'none';
+        })
     })
 })
-///CLOSE FORM////
-const closeContractForm = document.querySelector('#close-contract-form');
-closeContractForm.addEventListener('click', () => {
-    contractFormContainer.style.display = 'none';
-})
-
-
 //DELAY SUBMITING FORM//
 const contractForm = document.getElementById('contract-form');
 const submitContractFormButton = document.getElementById('submit-contract-form');
@@ -74,6 +81,9 @@ contractForm.addEventListener('submit', (event) => {
         contractForm.submit();
     }, 2000)
 })
+////////////////FORM END//////////////////////////////////////////
+
+
 
 
 ///get scroll direction//
@@ -97,6 +107,7 @@ window.addEventListener('scroll', getScrollDirection)
 //////////////////////////END///
 
 
+//SUNCE//
 let addX = 250;
 let addY = 200;
 let counterX = 0;
@@ -135,6 +146,7 @@ window.addEventListener('scroll', () => {
         sunce.style.top = `${addY}px`
     }
 });
+////SUNCE END////
 
 
 

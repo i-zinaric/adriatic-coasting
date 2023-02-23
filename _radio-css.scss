@@ -3,9 +3,12 @@
 }
 
 #radio-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     position: relative;
     height: 400px;
-    padding-top: 150px;
     background: url('./images/prugasto-sunce.svg') no-repeat center bottom/40%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
     padding-left: 10%;
     padding-right: 10%;
@@ -123,12 +126,16 @@
                         outline: none;
                     }
                     &::placeholder {
-                        display: none;
+                        color: $sand;
                     }
                 }
             }
         }
         button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
             height: 90px;
             width: 100%;
             background-color: $blue;
@@ -139,7 +146,6 @@
                 background-color: $pink;
             }
             div {
-                margin: auto;
                 padding: 6px;
 
                 font-family: $bungee;
@@ -150,11 +156,14 @@
             }
         }
         #rs-submit-message {
+            display: none;
+            justify-content: center;
+            align-items: center;
+
             height: 90px;
             width: 100%;
             background-color: $red;
             div {
-                margin: auto;
                 background-color: $red;
                 padding: 6px;
                 text-align: center;
@@ -170,8 +179,7 @@
 @media only screen and (min-width: 1601px) {
     #radio-header {    
         height: 500px;
-        padding-top: 190px;
-        background: url('./images/prugasto-sunce.svg') no-repeat center 450px/40%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
+        background: url('./images/prugasto-sunce.svg') no-repeat bottom 50%/40%, linear-gradient(180deg, #FFBD85, #FFAAB1 55%, #FF97DF 80%) fixed;
     }
     #music-library {
         h4 {
@@ -208,9 +216,8 @@
 
 //////////SMALL//////////////
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    #radio-header {    
+    #radio-header {   
         height: 300px;
-        padding-top: 110px;
         background: url('./images/prugasto-sunce.svg') no-repeat center bottom/50%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
     }
 
@@ -282,7 +289,6 @@
     #radio-header {
         position: relative;
     
-        padding-top: 70px;
         padding-left: 30px;
         padding-right: 30px;
         
@@ -305,11 +311,13 @@
         display: flex;
         flex-wrap: wrap;
         #player {
+            width: 100%;
             order: 2;
             #frame {
                 display: block;
                 position: static;
                 height: auto;
+                width: 100%;
                 margin-top: 30px;
                 margin-bottom: 35px;
                 background-image: none;
@@ -367,7 +375,6 @@
             }
         }
         form {
-            margin-bottom: 50px;
             #contact-item-container {
                 margin-bottom: 20px;
                 padding-right: 0px;
@@ -396,19 +403,25 @@
                 }
             }
             button {
-                height: 120px;
+                height: auto;
+                min-height: 70px;
                 div {
-                    font-size: 42px;
+                    font-size: 36px;
                     padding: 4px;
                 }
+                .thank-you-message {
+                    background-color: $red;
+                    font-size: 22px;
+                    font-family: $bitter;
+                    &:hover {cursor: default;}
+                }
             }
-            #rs-submit-message {   ///NE RADI ///
+            #rs-submit-message {
+                height: auto;
                 min-height: 70px;
-                display: none;
                 div {
-                    line-height: 85px;
-                    font-size: 13px;
-                    padding: 0 6px;
+                    font-size: 18px;
+                    line-height: 20px;
                 }
             }
         }
