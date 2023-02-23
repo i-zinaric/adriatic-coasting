@@ -306,11 +306,19 @@
 
     #radio-player {
         background-color: $red;
-        padding: 40px 10px 40px 10px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        background-image: url(./images/radio.svg);
+        background-position: center 97%;
+        background-repeat: no-repeat;
+        background-size: auto 150px;
 
         display: flex;
         flex-wrap: wrap;
         #player {
+            padding-left: 10px;
+            padding-right: 10px;
             width: 100%;
             order: 2;
             #frame {
@@ -325,7 +333,7 @@
                 background-repeat: none;
                 background-size: none;
                 iframe {
-                    width: 95vw;
+                    width: 100%;
                     height: 160px;
                     position: static;
                     top: 0px;
@@ -337,10 +345,17 @@
         }
         .paragraf {
             order: 3;
+            &::after {
+                content: "";
+                display: block;
+                height: 150px;
+            }
         }
         p {
             width: 100%;
             margin: 0;
+            padding-left: 10px;
+            padding-right: 10px;
         }
     }
 
