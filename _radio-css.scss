@@ -131,13 +131,6 @@
             background-color: $blue;
             border: none;
             box-shadow: none;
-
-            font-family: $bungee;
-            font-size: 60px;
-            font-weight: 400;
-            text-transform: uppercase;
-            color: white;
-            
             &:hover {
                 cursor: pointer;
                 background-color: $pink;
@@ -145,16 +138,23 @@
             div {
                 margin: auto;
                 padding: 6px;
+
+                font-family: $bungee;
+                font-size: 60px;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: white;
             }
         }
         #rs-submit-message {
-            display: none;
             height: 90px;
-            text-align: center;
+            width: 100%;
             background-color: $red;
             div {
+                margin: auto;
+                background-color: $red;
                 padding: 6px;
-                line-height: 90px;
+                text-align: center;
             }
         }
     }
@@ -297,88 +297,66 @@
 
     #radio-player {
         background-color: $red;
-        padding-top: 20px;
-        padding-bottom: 0px;
-    
+        padding: 20px 10px 40px 10px;
+
+        display: flex;
+        flex-wrap: wrap;
         #player {
+            order: 2;
             #frame {
-                display: flex;
-                justify-content: center;
-                position: relative;
-                background-image: none;
-                height: 180px;
+                display: block;
+                position: static;
+                height: auto;
+                margin-top: 20px;
                 margin-bottom: 20px;
-    
+                background-image: none;
+                background-position: none;
+                background-repeat: none;
+                background-size: none;
                 iframe {
-                    width: 95%;
-                    height: 170px;
-                    position: absolute;
-                    top: 10px;
-                    background-color: $red;
+                    width: 95vw;
+                    height: 160px;
+                    position: static;
+                    top: 0px;
                 }
             }
         }
-        
+        .strong-paragraf {
+            order: 1;
+        }
+        .paragraf {
+            order: 3;
+        }
         p {
             width: 100%;
-            margin: 20px 0;
-            padding-left: 10px;
-            padding-right: 10px;
-
-            &:last-of-type {
-                margin-bottom: 20px;
-            }
-            &:last-of-type::after {
-                content: '';
-                display: block;
-                height: 200px;
-                margin-left: -10px;
-                margin-right: -10px;
-                background-image: url(./images/radio.svg);
-                background-position: center bottom;
-                background-repeat: no-repeat;
-                background-size: auto 80%;
-            }
+            margin: 0;
         }
     }
 
 
     #music-library {
-        background-color: $sand;
         h4 {
-            background-color: $red;
             padding: 20px 10px;
             font-size: 42px;
-            color: $sand;
         }
         .wheels-container {
-            width: 100%;
-            display: flex;
             justify-content: space-around;
-            padding-left: 0;
-            padding-right: 0;
-            padding-bottom: 0px;
+            padding: 0 0 50px;
             flex-wrap: wrap;
-            background-color: $red;
             #wheel-1 {
                 flex-shrink: 0;
-                width: 30%;
-                height: 30%;
+                width: 45%;
+                height: 45%;
             }
             #wheel-2 {
                 flex-shrink: 0;
-                width: 30%;
-                height: 30%;
+                width: 45%;
+                height: 45%;
                 }
             p {
-                background-color: $sand;
-                margin-top: 50px;
                 margin-left: 0px;
                 margin-right: 0px;
-                padding: 30px 10px 50px 10px;
-                color: $red;
-                font-size: 16px;
-                line-height: 24px;
+                padding: 30px 10px 0px;
 
                 order: 3;
                 width: 100%;
@@ -406,11 +384,13 @@
                 }
             }
             button {
-                min-height: 70px;
-                font-size: 38px;
+                height: 120px;
+                div {
+                    font-size: 42px;
+                    padding: 4px;
+                }
             }
             #rs-submit-message {
-                display: none;
                 min-height: 70px;
                 div {
                     line-height: 85px;
