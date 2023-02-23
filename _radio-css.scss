@@ -122,6 +122,9 @@
                     &:focus {
                         outline: none;
                     }
+                    &::placeholder {
+                        display: none;
+                    }
                 }
             }
         }
@@ -283,8 +286,8 @@
         padding-left: 30px;
         padding-right: 30px;
         
-        height: 200px;
-        background: url('./images/prugasto-sunce.svg') no-repeat center bottom/60%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
+        height: 300px;
+        background: url('./images/prugasto-sunce.svg') no-repeat center bottom/70%, linear-gradient(180deg, #FFBD85, #FFAAB1 45%, #FF97DF 100%) fixed;
         a {
             width: 50px;
             height: 50px;
@@ -297,7 +300,7 @@
 
     #radio-player {
         background-color: $red;
-        padding: 20px 10px 40px 10px;
+        padding: 40px 10px 40px 10px;
 
         display: flex;
         flex-wrap: wrap;
@@ -307,8 +310,8 @@
                 display: block;
                 position: static;
                 height: auto;
-                margin-top: 20px;
-                margin-bottom: 20px;
+                margin-top: 30px;
+                margin-bottom: 35px;
                 background-image: none;
                 background-position: none;
                 background-repeat: none;
@@ -338,9 +341,10 @@
         h4 {
             padding: 20px 10px;
             font-size: 42px;
+            line-height: 44px;
         }
         .wheels-container {
-            justify-content: space-around;
+            justify-content: space-evenly;
             padding: 0 0 50px;
             flex-wrap: wrap;
             #wheel-1 {
@@ -363,23 +367,31 @@
             }
         }
         form {
+            margin-bottom: 50px;
             #contact-item-container {
-                margin-bottom: 40px;
-                padding-right: 10px;
-                padding-left: 10px;
+                margin-bottom: 20px;
+                padding-right: 0px;
+                padding-left: 0px;
                 .contact-item {
                     display: block;
                     margin-left: 0px;
                     margin-right: 0px;
                     label {
-                        display: block;
+                        display: none;
                         margin-left: 0px;
                         margin-right: 0px;
                         font-size: 18px;
                     }
                     input {
-                        width: 100%;        
+                        width: 100%;    
+                        padding-left: 10px;    
                         font-size: 16px;
+                        &::placeholder {
+                            font-size: 18px;
+                            font-weight: 500;
+                            font-family: $bitter;
+                            color: $blue;
+                        }
                     }
                 }
             }
@@ -392,6 +404,7 @@
             }
             #rs-submit-message {   ///NE RADI ///
                 min-height: 70px;
+                display: none;
                 div {
                     line-height: 85px;
                     font-size: 13px;

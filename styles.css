@@ -1392,6 +1392,12 @@ footer .info a {
 #music-library form #contact-item-container .contact-item input:focus {
   outline: none;
 }
+#music-library form #contact-item-container .contact-item input::-moz-placeholder {
+  display: none;
+}
+#music-library form #contact-item-container .contact-item input::placeholder {
+  display: none;
+}
 #music-library form button {
   height: 90px;
   width: 100%;
@@ -1519,8 +1525,8 @@ footer .info a {
     padding-top: 70px;
     padding-left: 30px;
     padding-right: 30px;
-    height: 200px;
-    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/60%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
+    height: 300px;
+    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/70%, linear-gradient(180deg, #FFBD85, #FFAAB1 45%, #FF97DF 100%) fixed;
   }
   #radio-header a {
     width: 50px;
@@ -1532,7 +1538,7 @@ footer .info a {
   }
   #radio-player {
     background-color: #FF7058;
-    padding: 20px 10px 40px 10px;
+    padding: 40px 10px 40px 10px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -1543,8 +1549,8 @@ footer .info a {
     display: block;
     position: static;
     height: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 35px;
     background-image: none;
     background-position: none;
     background-repeat: none;
@@ -1569,9 +1575,10 @@ footer .info a {
   #music-library h4 {
     padding: 20px 10px;
     font-size: 42px;
+    line-height: 44px;
   }
   #music-library .wheels-container {
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 0 0 50px;
     flex-wrap: wrap;
   }
@@ -1592,10 +1599,13 @@ footer .info a {
     order: 3;
     width: 100%;
   }
+  #music-library form {
+    margin-bottom: 50px;
+  }
   #music-library form #contact-item-container {
-    margin-bottom: 40px;
-    padding-right: 10px;
-    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
   #music-library form #contact-item-container .contact-item {
     display: block;
@@ -1603,14 +1613,27 @@ footer .info a {
     margin-right: 0px;
   }
   #music-library form #contact-item-container .contact-item label {
-    display: block;
+    display: none;
     margin-left: 0px;
     margin-right: 0px;
     font-size: 18px;
   }
   #music-library form #contact-item-container .contact-item input {
     width: 100%;
+    padding-left: 10px;
     font-size: 16px;
+  }
+  #music-library form #contact-item-container .contact-item input::-moz-placeholder {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Bitter", serif;
+    color: #62CDF9;
+  }
+  #music-library form #contact-item-container .contact-item input::placeholder {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Bitter", serif;
+    color: #62CDF9;
   }
   #music-library form button {
     height: 120px;
@@ -1621,6 +1644,7 @@ footer .info a {
   }
   #music-library form #rs-submit-message {
     min-height: 70px;
+    display: none;
   }
   #music-library form #rs-submit-message div {
     line-height: 85px;
