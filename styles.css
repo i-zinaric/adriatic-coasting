@@ -1120,7 +1120,7 @@ footer .info a {
     padding-right: 30px;
     padding-top: 70px;
     height: 200px;
-    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/60%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
+    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/60%, linear-gradient(180deg, #FFBD85, #FFAAB1 35%, #FF97DF 60%) fixed;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1526,7 +1526,7 @@ footer .info a {
     padding-left: 30px;
     padding-right: 30px;
     height: 300px;
-    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/70%, linear-gradient(180deg, #FFBD85, #FFAAB1 45%, #FF97DF 100%) fixed;
+    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/70%, linear-gradient(180deg, #FFBD85, #FFAAB1 35%, #FF97DF 60%) fixed;
   }
   #radio-header a {
     width: 50px;
