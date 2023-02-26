@@ -29,7 +29,7 @@ radioshowForm.addEventListener('submit', (event) => {
     event.preventDefault();
     document.querySelector('#rs-submit-button').style.display = 'none';
     document.querySelector('#rs-submit-message').style.display = "flex";
-    document.setTimeout(() => {
+    setTimeout(() => {
         radioshowForm.submit();
     }, 2000)
 })

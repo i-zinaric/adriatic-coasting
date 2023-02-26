@@ -862,7 +862,7 @@ main {
   justify-content: center;
   align-items: center;
   height: 400px;
-  background: url("./images/prugasto-sunce.svg") no-repeat center bottom/40%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
+  background: url("./images/prugasto-sunce.svg") no-repeat center bottom/40%, linear-gradient(180deg, #FFBD85, #ffd4aa 50%, #ffc8ff 100%) fixed;
 }
 
 footer {
@@ -1121,7 +1121,7 @@ footer .info a {
     padding-left: 30px;
     padding-right: 30px;
     height: 200px;
-    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/60%, linear-gradient(180deg, #FFBD85, #FFAAB1 65%, #FF97DF 90%) fixed;
+    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/60%, linear-gradient(180deg, #fffe85, #FF97DF 100%) fixed;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1528,7 +1528,7 @@ footer .info a {
     padding-left: 30px;
     padding-right: 30px;
     height: 300px;
-    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/70%, linear-gradient(180deg, #FFBD85, #FFAAB1 35%, #FF97DF 60%) fixed;
+    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/70%, linear-gradient(180deg, #ffd478, #ffa7e4 60%) fixed;
   }
   #radio-header a {
     width: 50px;
@@ -1599,21 +1599,29 @@ footer .info a {
     justify-content: space-evenly;
     padding: 0 0 50px;
     flex-wrap: wrap;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
   }
   #music-library .wheels-container #wheel-1 {
     flex-shrink: 0;
     width: 45%;
     height: 45%;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
   }
   #music-library .wheels-container #wheel-2 {
     flex-shrink: 0;
     width: 45%;
     height: 45%;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
   }
   #music-library .wheels-container p {
     margin-left: 0px;
     margin-right: 0px;
     padding: 30px 10px 0px;
+    font-size: 18px;
+    line-height: 26px;
     order: 3;
     width: 100%;
   }
