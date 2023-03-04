@@ -394,10 +394,8 @@
             p {
                 margin-left: 0px;
                 margin-right: 0px;
-                padding: 30px 10px 0px;
+                padding: 20px 10px 0px;
 
-                /* font-size: 18px; */
-                line-height: 26px;
                 font-weight: 500;
 
                 order: 3;
@@ -413,6 +411,7 @@
                     display: block;
                     margin-left: 0px;
                     margin-right: 0px;
+                    border-bottom: 3px solid $blue;
                     label {
                         display: none;
                         margin-left: 0px;

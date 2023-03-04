@@ -1620,9 +1620,7 @@ footer .info a {
   #music-library .wheels-container p {
     margin-left: 0px;
     margin-right: 0px;
-    padding: 30px 10px 0px;
-    /* font-size: 18px; */
-    line-height: 26px;
+    padding: 20px 10px 0px;
     font-weight: 500;
     order: 3;
     width: 100%;
@@ -1636,6 +1634,7 @@ footer .info a {
     display: block;
     margin-left: 0px;
     margin-right: 0px;
+    border-bottom: 3px solid #62CDF9;
   }
   #music-library form #contact-item-container .contact-item label {
     display: none;
