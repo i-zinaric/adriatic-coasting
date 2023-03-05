@@ -94,6 +94,19 @@
     // header & navigation end
 
     //main start
+    .bg-gradient {
+        #sunce {
+            position: absolute;
+            left: 10px; //x-os (JS)
+            top: 80px; //y-os (JS)
+            z-index: 0;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+
     #intro {
         padding-right: 5%;
         background-size: 40px; //valić
