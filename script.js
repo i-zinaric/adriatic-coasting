@@ -117,7 +117,7 @@ if (mobile.matches) {
     window.addEventListener('scroll', () => {
         if (scrollingDown) {
             if (addY <= sunceDivHeigth - 100) {
-                /* addX = addX + 0.5; */
+                addX = addX + 0.5;
                 addY = addY + 5;
             }
             sunce.style.left = `${addX}px`;
