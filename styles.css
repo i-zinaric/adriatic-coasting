@@ -1236,7 +1236,7 @@ footer .info a {
   }
   .banner {
     height: 300px;
-    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/50%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
+    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/50%, linear-gradient(180deg, #FFBD85, #ffd4aa 50%, #ffc8ff 100%) fixed;
   }
   footer {
     height: 240px;
@@ -1271,7 +1271,7 @@ footer .info a {
   }
   .banner {
     height: 500px;
-    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/40%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
+    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/40%, linear-gradient(180deg, #FFBD85, #ffd4aa 50%, #ffc8ff 100%) fixed;
   }
 }
 @media only screen and (min-width: 2501px) {
@@ -1302,7 +1302,7 @@ footer .info a {
   align-items: center;
   position: relative;
   height: 400px;
-  background: url("./images/prugasto-sunce.svg") no-repeat center bottom/40%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
+  background: url("./images/prugasto-sunce.svg") no-repeat center bottom/40%, linear-gradient(180deg, #FFBD85, #ffd4aa 50%, #FF97DF 100%) fixed;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -1458,7 +1458,7 @@ footer .info a {
 @media only screen and (min-width: 1601px) {
   #radio-header {
     height: 500px;
-    background: url("./images/prugasto-sunce.svg") no-repeat bottom 50%/40%, linear-gradient(180deg, #FFBD85, #FFAAB1 55%, #FF97DF 80%) fixed;
+    background: url("./images/prugasto-sunce.svg") no-repeat bottom 50%/40%, linear-gradient(180deg, #FFBD85, #ffd4aa 50%, #FF97DF 100%) fixed;
   }
   #music-library h4 {
     margin-right: 30%;
@@ -1488,7 +1488,7 @@ footer .info a {
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   #radio-header {
     height: 300px;
-    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/50%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
+    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/50%, linear-gradient(180deg, #FFBD85, #ffd4aa 50%, #FF97DF 100%) fixed;
   }
   #radio-player {
     padding-top: 0px;

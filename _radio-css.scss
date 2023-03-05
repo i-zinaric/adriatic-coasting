@@ -9,7 +9,7 @@
 
     position: relative;
     height: 400px;
-    background: url('./images/prugasto-sunce.svg') no-repeat center bottom/40%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
+    background: url('./images/prugasto-sunce.svg') no-repeat center bottom/40%, linear-gradient(180deg, #FFBD85, #ffd4aa 50%, #FF97DF 100%) fixed;
     padding-left: 10%;
     padding-right: 10%;
     a {
@@ -179,7 +179,7 @@
 @media only screen and (min-width: 1601px) {
     #radio-header {    
         height: 500px;
-        background: url('./images/prugasto-sunce.svg') no-repeat bottom 50%/40%, linear-gradient(180deg, #FFBD85, #FFAAB1 55%, #FF97DF 80%) fixed;
+        background: url('./images/prugasto-sunce.svg') no-repeat bottom 50%/40%, linear-gradient(180deg, #FFBD85, #ffd4aa 50%, #FF97DF 100%) fixed;
     }
     #music-library {
         h4 {
@@ -218,7 +218,7 @@
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     #radio-header {   
         height: 300px;
-        background: url('./images/prugasto-sunce.svg') no-repeat center bottom/50%, linear-gradient(180deg, #FFBD85, #FFAAB1 75%, #FF97DF 100%) fixed;
+        background: url('./images/prugasto-sunce.svg') no-repeat center bottom/50%, linear-gradient(180deg, #FFBD85, #ffd4aa 50%, #FF97DF 100%) fixed;
     }
 
     #radio-player {
