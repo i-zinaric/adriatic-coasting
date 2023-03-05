@@ -1131,7 +1131,7 @@ footer .info a {
     padding-left: 30px;
     padding-right: 30px;
     height: 200px;
-    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/60%, linear-gradient(180deg, #fffe85, #FF97DF 100%) fixed;
+    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/60%, linear-gradient(180deg, #ffc74c, #FF97DF 100%) fixed;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1146,6 +1146,16 @@ footer .info a {
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   header nav ul li {
     padding-left: 400px; /* udaljenost teksta od lijeve margine */
+  }
+  .bg-gradient #sunce {
+    position: absolute;
+    left: 80px;
+    top: 100px;
+    z-index: 0;
+  }
+  .bg-gradient #sunce img {
+    width: 250px;
+    height: 250px;
   }
   #intro {
     padding-bottom: 100px;
@@ -1538,7 +1548,7 @@ footer .info a {
     padding-left: 30px;
     padding-right: 30px;
     height: 300px;
-    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/70%, linear-gradient(180deg, #ffd478, #ffa7e4 60%) fixed;
+    background: url("./images/prugasto-sunce.svg") no-repeat center bottom/70%, linear-gradient(180deg, #ffc74c, #ffa7e4 60%) fixed;
   }
   #radio-header a {
     width: 50px;

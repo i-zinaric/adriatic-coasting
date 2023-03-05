@@ -9,7 +9,19 @@
     }
     // header & navigation end
     
-    //pomaknut paragraf više udesno
+    .bg-gradient {
+        #sunce {
+            position: absolute;
+            left: 80px; //x-os (JS)
+            top: 100px; //y-os (JS)
+            z-index: 0;
+            img {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    }
+
     #intro {
         padding-bottom: 100px;
         h2 {

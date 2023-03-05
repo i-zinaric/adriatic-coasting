@@ -108,63 +108,76 @@ window.addEventListener('scroll', getScrollDirection)
 
 
 //SUNCE//
+const sunceDivHeigth = document.querySelector('.bg-gradient').offsetHeight;
 const mobile = window.matchMedia("(max-width: 768px)");
+const small = window.matchMedia('(min-width:769px) and (max-width: 1024px)');
 if (mobile.matches) {
     let addX = 10;
     let addY = 80;
-    let counter = 0;
     window.addEventListener('scroll', () => {
         if (scrollingDown) {
-            if (counter  <= 400) {
+            if (addY <= sunceDivHeigth - 100) {
                 /* addX = addX + 0.5; */
                 addY = addY + 5;
-                counter++;
             }
             sunce.style.left = `${addX}px`;
             sunce.style.top = `${addY}px`;
         }
     })
-} else {
-    let addX = 250;
-    let addY = 200;
-    let counterX = 0;
+} else if (small.matches) {
+    let addX = 80;
+    let addY = 100;
     window.addEventListener('scroll', () => {
         if (scrollingDown) {
-            ///// -3, -2, -1, 0, 1, 2
-            ///// -9, -4, -1, 0, -1, 4
-            if (counterX <= 15) {
-                addX = addX + 5;
-                addY = addY - 5;
-                counterX++
-            } else if (counterX > 15 && counterX <= 25) {
-                addX = addX + 5;
-                addY = addY + 0;
-                counterX++
-            } else if (counterX > 20 && counterX <= 70) {
-                addX = addX + 5;
+            if (addY <= sunceDivHeigth - 100) {
+                addX = addX + 1.6;
                 addY = addY + 5;
-                counterX++
-            }   else if (counterX > 70 && counterX <= 120) {
-                addX = addX + 4;
-                addY = addY + 7;
-                counterX++
-            } else if (counterX > 120 && counterX <= 250) {
-                addX = addX + 3;
-                addY = addY + 7;
-                counterX++
-            } 
-            // else if (counterX > 170 && counterX < 200) {
-            //     addX = addX + 5;
-            //     addY = addY + 9;
-            //     counterX++
-            // }
-            
+            }
             sunce.style.left = `${addX}px`;
-            sunce.style.top = `${addY}px`
+            sunce.style.top = `${addY}px`;
         }
-    });
-    }
-////SUNCE END////
+    })
+    } else {
+        let addX = 250;
+        let addY = 200;
+        let counterX = 0;
+        window.addEventListener('scroll', () => {
+            if (scrollingDown) {
+                ///// -3, -2, -1, 0, 1, 2
+                ///// -9, -4, -1, 0, -1, 4
+                if (counterX <= 15) {
+                    addX = addX + 5;
+                    addY = addY - 5;
+                    counterX++
+                } else if (counterX > 15 && counterX <= 30) {
+                    addX = addX + 5;
+                    addY = addY + 0;
+                    counterX++
+                } else if (counterX > 20 && counterX <= 50) {
+                    addX = addX + 5;
+                    addY = addY + 5;
+                    counterX++
+                }   else if (counterX > 50 && counterX <= 120) {
+                    addX = addX + 3;
+                    addY = addY + 7;
+                    counterX++
+                } else if (counterX > 120 && addY <= sunceDivHeigth - 100) {
+                    addX = addX + 1.5;
+                    addY = addY + 8;
+                    counterX++
+                } 
+                // else if (counterX > 170 && counterX < 200) {
+                //     addX = addX + 5;
+                //     addY = addY + 9;
+                //     counterX++
+                // }
+                
+                sunce.style.left = `${addX}px`;
+                sunce.style.top = `${addY}px`
+            }
+        });
+        }
+    ////SUNCE END////
 
 
 
