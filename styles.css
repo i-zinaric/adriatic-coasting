@@ -796,8 +796,8 @@ main {
 .artist-info .info-zip-container p {
   margin-bottom: 15px;
   font-family: "Bitter", serif;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 16px;
   color: white;
   max-height: 446px;
   overflow: hidden;
@@ -805,13 +805,13 @@ main {
 }
 .artist-info .info-zip-container p a {
   font-family: "Bitter", serif;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 16px;
   color: white;
 }
 .artist-info .info-zip-container p span {
   padding: 2px;
-  line-height: 30px;
+  line-height: 28px;
 }
 .artist-info .info-zip-container p span.red {
   background-color: #ff7058;
@@ -1180,12 +1180,12 @@ footer .info a {
   }
   .artist-info .info-zip-container p {
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 16px;
     max-height: 434px;
     padding-right: 10%;
   }
   .artist-info .info-zip-container p a {
-    font-size: 18px;
+    font-size: 16px;
   }
   .artist-info .info-zip-container p span {
     line-height: 28px;
