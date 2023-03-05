@@ -153,30 +153,24 @@ if (mobile.matches) {
                     addX = addX + 5;
                     addY = addY + 0;
                     counterX++
-                } else if (counterX > 20 && counterX <= 50) {
-                    addX = addX + 5;
+                } else if (counterX > 30 && counterX <= 50) {
+                    addX = addX + 4;
                     addY = addY + 5;
                     counterX++
                 }   else if (counterX > 50 && counterX <= 120) {
-                    addX = addX + 3;
+                    addX = addX + 2.7;
                     addY = addY + 7;
                     counterX++
                 } else if (counterX > 120 && addY <= sunceDivHeigth - 100) {
                     addX = addX + 1.5;
                     addY = addY + 8;
                     counterX++
-                } 
-                // else if (counterX > 170 && counterX < 200) {
-                //     addX = addX + 5;
-                //     addY = addY + 9;
-                //     counterX++
-                // }
-                
+                }                
                 sunce.style.left = `${addX}px`;
                 sunce.style.top = `${addY}px`
             }
         });
-        }
+    }
     ////SUNCE END////
 
 
